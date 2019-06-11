@@ -1,0 +1,10 @@
+﻿npm init --yes           создает package.json
+--yes                    установит на все вопросы дефолтные ответы
+git init                 создаёт в текущем каталоге новый подкаталог с именем .git (скрытый)
+git add .                добавит файлы в каталоге для комментирования
+git commit -m "комент"   индексация для отправки на сервер
+git push                 отправка на сервер
+
+выкачать репозиторий с github
+git clone git://github.com/schacon/grit.git           ссылка клонируемого репозитория
+git clone git://github.com/schacon/grit.git mygrit    если добавить mygrit репозиторий будет в этой папке.
