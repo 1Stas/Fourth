@@ -1,0 +1,1604 @@
+
+
+h1, h2, h3, h4, h5, h6, p, span, td, tr, th, a, legend
+	font-family: sans-serif
+	
+body
+	padding: 0
+	margin: 0
+
+.main
+	box-sizing: border-box
+	width: 100%
+
+.navbar-background
+	background: black
+
+.navbar
+	position: relative
+	display: flex
+	width: 80%
+	height: 10%
+	box-sizing: border-box
+	margin: 0 auto
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 0 10px 0 10px
+	a 
+		padding: 0px 10px 0px 10px
+		text-transform: uppercase
+		text-decoration: none
+		color: #FFF
+		font-size: 16px
+		line-height: 70px
+		cursor: pointer
+		&:hover
+			background: white
+			color: #000
+			box-shadow: inset 0 -4px 0 0 #826550
+		&:nth-child(6)
+			padding: 0px 0px 0px 20px
+			width: 100px
+			text-align: center
+
+.logo-mobile 
+	height: 85px
+	img
+		position: relative
+		display: block
+		margin: 0 auto
+		top: 25px
+
+.logo-tablet
+	position: absolute
+	top: 32%
+	left: 28%
+
+.logo-desktop
+	position: absolute
+	top: 45%
+	left: 35%
+	width: 30%
+
+.navbar__popup
+	position: relative
+	color: #fff
+	width: 70px
+	background: #694D38
+	box-sizing: border-box
+
+.nav_form
+	position: absolute
+	background: #fff
+	width: 322px
+	top: -170px
+	right: 200px
+	form 
+		padding: 10px
+		h3
+			font-size: 26px
+			margin: 10px
+			text-align: center
+		p 
+			font-size: 16px
+			text-align: center
+		input[type="text"], input[type="password"]
+			padding: 10px
+			margin-bottom: 10px
+			width: 280px
+		input[type="text"] + span
+			position: relative
+			&:after
+				position: absolute
+				content: ""
+				background: url(../img/login.png) no-repeat
+				background-size: 100%
+				width: 20px
+				height: 20px
+				top: -50px
+				left: 270px
+				color: red
+		input[type="password"] + span
+			position: relative
+			&:after
+				position: absolute
+				content: ""
+				background: url(../img/lock.png) no-repeat
+				background-size: 100%
+				width: 20px
+				height: 20px
+				top: -40px
+				left: 270px
+				color: red
+		input[type="checkbox"]
+			position: relative
+			width: 20px
+			height: 20px
+			background: #fff
+			top: 5px
+			margin-bottom: 20px
+		.form-elem
+			padding-left: 20px
+			color: #000000
+		input[type="submit"]
+			display: inline-block
+			padding: 15px
+			text-transform: uppercase
+			color: #fff
+			font-weight: bold
+			background: #826651
+			border: 1px solid #ccc
+			font-size: 18px
+			width: 45%
+			margin-right: 40px
+		.form-close.mfp-close
+			position: static
+			height: 20px
+			line-height: normal
+			background: white
+			display: inline-block
+			padding: 15px
+			color: #000
+			font-size: 16px
+			border: 1px solid #ccc
+			text-decoration: none
+			text-align: center
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 18px
+			width: 30%
+
+.popup_icon 
+	position: absolute
+	width: 35px
+	top: 7px
+	left: 17px
+
+.popup_menu
+	position: absolute
+	background: #826550
+	width: 244px
+	display: flex
+	flex-direction: column
+	top: -118px
+	left: 70px
+	box-shadow: inset 25px 0px 15px -30px #000
+	a 
+		text-transform: uppercase
+		text-decoration: none
+		color: #FFF
+		font-size: 18px
+		padding: 15px 10px 15px 20px
+		box-shadow: inset 0 -1px 0 0 #71543f
+
+.popup_menu a:nth-child(6)
+	position: relative
+	background: #6a4d38
+	text-transform: none
+	padding-left: 50px
+	.login_button
+		top: 15px
+		left: 20px
+
+.navbar a span
+	position: relative
+
+.login_button
+	position: absolute
+	height: 20px
+	left: -25px
+	top: -1px 
+
+.back-image 
+	position: relative
+	display: block
+	top: -1px
+	width: 100%
+
+.info
+	position: relative
+	top: -1px
+	background: #353535
+
+.angel-div
+	position: relative
+	.info-angel
+		position: absolute
+		width: 100%
+		bottom: 70px
+
+.angel-div-gray 
+	position: relative
+	.info-angel
+		position: absolute
+		width: 100%
+		bottom: -1px
+
+.info__stat
+	position: relative
+	top: -166px
+	width: 80%
+	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+	flex-direction: row
+	.stat-wrapper
+		width: 33.33%
+		background: #fff
+		padding: 30px 50px
+		box-sizing: border-box
+		h2
+			font-size: 40px
+			margin: 0
+			margin-bottom: 10px
+		p
+			font-size: 20px
+		span 
+			color: #b2b2b2
+	.stat__four
+		width: 66.66%
+		display: flex
+		flex-wrap: wrap
+		.four__item_1, .four__item_2, .four__item_3, .four__item_4
+			width: 50%
+			padding: 20px 0px 20px 20px
+			box-sizing: border-box
+			color: #fff
+		.four__item_1 h2, .four__item_2 h2, .four__item_3 h2, .four__item_4 h2
+			margin: 0
+			font-size: 72px
+		.four__item_1 p, .four__item_2 p, .four__item_3 p, .four__item_4 p
+			font-size: 20px
+			margin: 10px
+
+.stat__one:after
+	position: absolute
+	content: ""
+	border: 30px solid black
+	left: -29px
+	top: -10px
+	border-color: white transparent transparent
+	transform: rotateZ(225deg)
+
+.four__item_1
+	background: #404040
+
+.four__item_2
+	background: #4e4e4e
+
+.four__item_3
+	background: #353535
+
+.four__item_4
+	background: #404040
+
+.info__promo
+	position: relative
+	top: -183px
+	width: 80%
+	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+	&:before 
+		position: absolute
+		content: "* - приведенные данные ложь"
+		color: #b2b2b2
+		left: 50px
+	.promo__item_1, .promo__item_2, .promo__item_3
+		width: 33.33%
+		margin-top: 80px
+		text-align: center
+		padding: 30px 30px 0 30px
+		box-sizing: border-box
+		color: #fff
+	.promo__item_1 h2, .promo__item_2 h2, .promo__item_3 h2
+		font-size: 30px
+	.promo__item_1 p, .promo__item_2 p, .promo__item_3 p
+		font-size: 20px
+		margin-bottom: 0
+
+.promo__item_1, .promo__item_2
+	border-right: 1px solid #404040
+	svg
+		width: 40%
+
+.promo__item_3 svg
+	width: 40%
+
+.owl-mobile .owl-dots, .about__wrapper .owl-dots
+	text-align: center
+	.active span
+		background: #fff
+	.owl-dot
+		display: inline-block
+		margin: 30px
+		border: none
+		span
+			width: 10px
+			height: 10px
+			display: block
+			border: 2px solid white
+			transform: rotateZ(45deg)
+
+.news
+	position: relative
+	width: 100%
+	top: -70px
+	background: white
+	.news__wrapper
+		width: 80%
+		margin: 0px auto
+		padding: 20px 0
+		border-bottom: 1px solid #ccc
+		.news__title, .news__title-mobile
+			display: flex
+			flex-wrap: wrap
+			width: 100%
+			padding: 20px 60px
+			box-sizing: border-box
+			h2 
+				margin: 0
+				line-height: 40px
+				font-size: 40px
+			a 
+				margin-left: auto
+				border: 1px solid #ccc
+				padding: 10px
+				text-transform: uppercase
+				text-decoration: none
+				color: #000
+				font-size: 24px
+
+.news .news__wrapper .news__sale
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	width: 100%
+	.sale__item
+		position: relative
+		width: 25%
+		.sale-date
+			position: absolute
+			text-align: center
+			background: #000000
+			color: #fff
+			top: 20px
+			left: -60px
+			width: 45px
+			height: 48px
+			span 
+				position: relative
+				font-size: 30px
+				font-weight: bold
+				left: 4px
+			b 
+				position: relative
+				font-size: 12px
+				top: -8px
+		p 
+			font-size: 22px
+
+.triangle
+	position: absolute
+	top: 68px
+	left: -60px
+	width: 45px
+
+.news__about
+	width: 80%
+	margin: 0px auto
+	padding: 20px 0
+	.about__title
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		padding: 20px 50px
+		box-sizing: border-box
+		h2 
+			margin: 0
+			line-height: 40px
+			font-size: 40px
+		a 
+			margin-left: auto
+			border: 1px solid #ccc
+			padding: 10px
+			text-transform: uppercase
+			text-decoration: none
+			color: #000
+			font-size: 24px
+
+.about__wrapper
+	width: 85%
+	margin: 0 auto
+	.about__carousel
+		.about-item
+			display: flex
+			height: 200px
+			border: 1px solid #ccc
+			margin-top: 20px
+			box-sizing: border-box
+			.about-img 
+				width: 25%
+				img
+					width: 100%
+					object-fit: cover
+			.about-a
+				padding: 20px 40px
+				width: 70%
+				h3 
+					font-size: 32px
+					margin: 10px
+				p 
+					font-size: 26px
+					margin: 10px
+
+.about__wrapper .owl-dots
+	text-align: center
+	.active span
+		background: #404040
+	.owl-dot
+		display: inline-block
+		margin: 30px
+		border: none
+		span
+			width: 10px
+			height: 10px
+			display: block
+			border: 2px solid #404040
+			transform: rotateZ(45deg)
+
+.about__carousel
+	position: relative
+	.owl-nav .owl-prev
+		position: absolute
+		width: 40px
+		height: 200px
+		top: 20px
+		left: -60px
+		border: 1px solid #ccc
+		span 
+			background: url(../img/svg/left-arrow.svg) no-repeat center
+			color: transparent
+			font-size: 40px
+	.owl-nav .owl-next
+		position: absolute
+		width: 40px
+		height: 200px
+		top: 20px
+		border: 1px solid #ccc
+		right: -60px
+		span 
+			background: url(../img/svg/right-arrow.svg) no-repeat center
+			color: transparent
+			font-size: 40px
+	
+.footer 
+	background: #404040
+	.footer__wrapper
+		display: flex
+		flex-wrap: wrap
+		width: 80%
+		margin: 0 auto
+		color: #fff
+		padding: 40px
+		justify-content: space-between
+		box-sizing: border-box
+		.footer__item
+			width: 33%
+			h3 
+				margin-bottom: 10px
+				font-size: 26px
+			p 
+				font-size: 20px
+				letter-spacing: 2px
+				a 
+					text-decoration: none
+					color: #fff
+		.footer__item:nth-child(2)
+			text-align: center
+			.footer_social_wrapper
+				display: flex
+				flex-wrap: wrap
+				width: 60%
+				margin: 0 auto
+				justify-content: space-around
+				.footer_social
+					width: 65px
+					height: 65px
+					border: 1px solid #666
+					box-sizing: border-box
+					font-size: 55px
+				.footer_social:nth-child(1)
+					font-size: 48px
+		.footer__item:nth-child(3)
+			text-align: right
+			h3 
+				padding-right: 40px
+				margin-bottom: 30px
+			a 
+				font-size: 24px
+				color: #fff
+				text-decoration: none
+				border: 1px solid #666
+				padding: 20px
+
+//Page 2 Work styles
+
+.work-angel-div
+	position: relative
+	.info-angel
+		position: absolute
+		width: 100%
+		bottom: 1px
+
+.work-photo
+	width: 80%
+	margin: 0px auto
+	.photo__title
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		padding: 40px 0px
+		box-sizing: border-box
+		h2 
+			margin: 0
+			line-height: 40px
+			font-size: 40px
+		a 
+			margin-left: auto
+			border: 1px solid #ccc
+			padding: 10px
+			text-transform: uppercase
+			text-decoration: none
+			color: #000
+			font-size: 24px
+	.photo_wrapper 
+		width: 100%
+		.photo_first
+			display: flex
+			border: 1px solid #ccc
+			position: relative
+			h3 
+				margin: 10px
+				font-size: 36px
+			p 
+				margin: 10px
+				font-size: 24px
+			.ours-work
+				width: 70vw
+				display: block
+				max-width: 100%
+				height: auto
+			&:before
+				position: absolute
+				content: ""
+				right: 0
+				top: 40px
+				background: url(../img/svg/label.svg) no-repeat
+				width: 200px
+				height: 50px
+				transform: rotateZ(180deg)
+			&:after
+				position: absolute
+				content: "РАБОТА МЕСЯЦА"
+				right: 10px
+				top: 55px
+				color: #fff
+				font-size: 18px
+			.photo_text
+				position: relative
+				display: flex
+				justify-content: center
+				flex-direction: column
+				padding: 40px 100px 40px 40px
+				.photo_elem
+					position: absolute
+					bottom: 40px
+					display: flex
+					flex-wrap: wrap
+					span 
+						position: relative
+						margin-right: 150px
+						left: 90px
+						margin-top: 20px
+						img
+							position: absolute
+							left: -65px
+							top: -10px
+							width: 35px
+							height: 35px
+					span:nth-child(3) img
+						width: 60px
+						height: 20px
+						top: 0px
+		.photo_two
+			position: relative
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-top: 40px
+			margin-bottom: 70px
+			.photo_item
+				width: 30%
+				border: 1px solid #ccc
+				margin-bottom: 40px
+				picture img 
+					width: 100%
+				.photo_text
+					padding: 20px 20px 90px 20px
+					h3 
+						font-size: 36px
+						margin: 10px
+					p 
+						font-size: 24px
+						margin: 10px
+				.photo_elem
+					position: absolute
+					bottom: 60px
+					span 
+						position: relative
+						margin-right: 80px
+						left: 100px
+						img
+							position: absolute
+							left: -65px
+							top: -10px
+							width: 35px
+							height: 35px
+			.photo_item:nth-child(2) .photo_elem span:nth-child(2) img
+				width: 60px
+				height: 20px
+				top: 0px
+
+.price
+	width: 100%
+	background: #535353
+	color: #fff
+	padding: 1px 0 120px 0
+	.price_wrapper
+		display: flex
+		justify-content: space-between
+		position: relative
+		width: 80%
+		margin: 0 auto
+		padding-top: 150px
+		cursor: default
+		h2 
+			position: absolute
+			top: 20px
+			font-size: 40px
+			letter-spacing: 5px
+			font-family: sans-serif
+		.price_table_tablet
+			table 
+				border-collapse: collapse
+				font-size: 26px
+				font-family: sans-serif
+				tr 
+					td 
+						border: 1px solid gray
+						padding: 20px 40px
+					th
+						border: 1px solid gray
+						color: gray
+						padding: 20px 40px
+		.price_table_mobile
+			table 
+				border-collapse: collapse
+				font-size: 18px
+				font-family: sans-serif
+				width: 100%
+				tr td
+					padding: 10px
+	.price_clock
+		border: 1px solid gray
+		margin-left: 25px
+		.pclock 
+			width: 50%
+			margin: 35px auto
+			img
+				width: 100%
+		p
+			font-size: 26px
+			padding: 10px 30px
+			text-align: center
+
+//Page 3 Form styles
+
+.angel-div-pinky
+	position: relative
+	.info-angel
+		position: absolute
+		width: 100%
+		bottom: 1px
+	
+.main_form
+	.fail, .success
+		position: absolute
+		text-align: center
+		padding: 40px
+		box-sizing: border-box
+		width: 600px
+		height: 400px
+		background: #fff
+		left: 700px
+		box-shadow: 2px 2px 10px
+		z-index: 1
+		a.mfp-close
+			position: static
+			background: #816550
+			color: #fff
+			width: 100%
+			font-size: 30px
+			padding: 20px 60px
+			text-decoration: none
+			cursor: pointer
+		h2 
+			font-size: 40px
+			margin-top: 40px
+			font-weight: 800
+		p 
+			font-size: 30px
+			margin-bottom: 60px
+			line-height: 40px
+
+
+.main_form
+	width: 100%
+	background: #f9f5f2
+	padding-bottom: 120px
+	.form_wrapper
+		width: 80%
+		margin: 0 auto
+		.form_title
+			display: flex
+			flex-wrap: wrap
+			width: 100%
+			padding: 40px 0px
+			box-sizing: border-box
+			h2 
+				margin: 0
+				line-height: 40px
+				font-size: 40px
+			a 
+				margin-left: auto
+				border: 1px solid #EDE6E1
+				padding: 10px
+				text-transform: uppercase
+				text-decoration: none
+				color: #000
+				font-size: 24px
+		input::placeholder, textarea::placeholder
+			color: #000 
+			font-size: 18px
+		input:focus::placeholder
+			color: transparent
+		input, fieldset
+			border: 1px solid #EDE6E1
+			padding: 10px 20px
+			line-height: 20px
+			box-sizing: border-box
+		.form_data
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			width: 100%
+			input[type="text"]
+				width: 30%
+				margin-bottom: 40px
+			input[type="phone"], input[type="email"]
+				width: 48%
+				margin-bottom: 40px
+			textarea
+				width: 100%
+				height: 20vh
+				line-height: 20px
+				padding: 10px 20px
+				border: 1px solid #EDE6E1
+		.form_model
+			margin: 60px 0 60px 0
+			width: 100%
+			legend
+				font-size: 30px
+				font-weight: 600
+				text-align: center
+			.form_model_set
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-around
+				padding: 50px 20px 20px 20px
+				label
+					width: 10%
+					text-align: center
+					input[type="radio"]
+						opacity: 0
+					input[type="radio"]:checked + .check:after
+						opacity: 1
+					p
+						position: relative
+						&:before
+							position: absolute
+							content: ""
+							border: 1px solid #E8E1DC
+							border-radius: 50%
+							width: 40px
+							height: 40px
+							top: -50px
+							left: 5px
+							background: #fff
+						&:after
+							position: absolute
+							content: ""
+							border: 1px solid #E8E1DC
+							border-radius: 50%
+							width: 20px
+							height: 20px
+							top: -40px
+							left: 15px
+							background: #F9DBC4
+							opacity: 0
+		.form_service
+			width: 100%
+			legend
+				font-size: 30px
+				font-weight: 600
+				text-align: center
+			.form_service_set
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				label 
+					width: 30%
+					margin: 20px 0 20px 0
+					input[type="checkbox"]
+						opacity: 0
+					input[type="checkbox"]:checked + span:after
+						opacity: 1
+					span 
+						position: relative
+						padding-left: 40px
+						&:before
+							position: absolute
+							content: ""
+							border: 1px solid #e8e1dc
+							width: 30px
+							height: 30px
+							top: -8px
+							left: 0
+							background: #ffffff
+						&:after
+							position: absolute
+							content: "\f00c"
+							font-family: FontAwesome
+							font-size: 20px
+							left: 6px
+							opacity: 0
+		input[type="submit"]
+			background: #816550
+			color: #fff
+			width: 100%
+			font-size: 24px
+			padding: 15px
+			margin-top: 50px
+
+
+//Page 1 Index @ media 
+
+@media (min-width: 1800px)
+	.logo-desktop
+		top: 40%
+
+@media (min-width: 1161px)
+	.stat-wrapper .stat__one span
+		display: none
+
+@media (max-width: 1200px)
+	.about__wrapper .about__carousel .about-item .about-img
+		width: 30%
+
+	.about__wrapper .about__carousel .about-item .about-a
+		box-sizing: border-box
+		padding: 10px
+		h3 
+			font-size: 26px
+		p 
+			font-size: 20px
+
+@media (max-width: 1200px)
+	.nav_form
+		right: 30px
+
+@media (max-width: 1160px)
+	.info__stat
+		flex-direction: column
+		margin-bottom: 20px
+		.stat-wrapper
+			display: flex
+			width: 100%
+			padding: 0
+		
+	.info__stat .stat-wrapper h2
+		margin-bottom: 34px
+
+	.stat__one, .stat__two
+		padding: 10px 10px 10px 20px
+		width: 50%
+
+	.stat-wrapper .stat__two span
+		display: none
+
+	.info__stat .stat__four
+		width: 100%
+		.four__item_1, .four__item_2, .four__item_3, .four__item_4
+			width: 50%
+
+	.info__stat .stat__four .four__item_1 h2, .info__stat .stat__four .four__item_2 h2, .info__stat .stat__four .four__item_3 h2, .info__stat .stat__four .four__item_4 h2
+		font-size: 60px
+
+	.info__promo .promo__item_1 p, .info__promo .promo__item_2 p, .info__promo .promo__item_3 p
+		margin: 10px 0
+
+	.info__promo .promo__item_1 h2, .info__promo .promo__item_2 h2, .info__promo .promo__item_3 h2
+		margin: 10px 0
+
+	.info__promo
+		flex-direction: column
+		.promo__item_1, .promo__item_2, .promo__item_3
+			display: flex
+			width: 100%
+			text-align: left
+			margin-top: 0
+			padding: 20px 10px
+
+	.info__promo .promo__item_1, .info__promo .promo__item_2
+		border-right: 0
+		border-bottom: 1px solid #404040
+
+	.promo__item_1 svg, .promo__item_2 svg, .promo__item_3 svg
+		width: 200px
+		padding-right: 20px
+		margin-top: 10px
+
+@media (max-width: 1111px)
+	.navbar
+		width: 90%
+
+@media (max-width: 1100px)
+	.logo-desktop
+		display: none
+
+	.news .news__wrapper .news__title, .news__about .about__title
+		padding: 10px 0px
+		h2 
+			font-size: 30px
+		a 
+			font-size: 18px
+
+	.news .news__wrapper .news__sale .sale__item p
+		font-size: 18px
+
+@media (min-width: 1100px)
+	.logo-tablet
+		display: none 
+
+@media (min-width: 1000px)
+	.logo-tablet
+		left: 33%
+
+	.navbar a 
+		font-size: 18px
+
+@media (max-width: 1000px)
+	.footer .footer__wrapper
+		width: 90%
+		.footer__item
+			width: 50%
+		.footer__item:nth-child(2)
+			order: 3
+			width: 100%
+			.footer_social_wrapper
+				width: 100%
+				justify-content: center
+				.footer_social
+					width: 33%
+
+@media (max-width: 950px)
+	.about__wrapper .about__carousel .about-item
+		height: 170px
+
+	.about__carousel .owl-nav 
+		.owl-next
+			height: 170px
+		.owl-prev
+			height: 170px
+
+	.news .news__wrapper .news__sale .sale__item
+		width: 40%
+
+	.news .news__wrapper .news__sale .sale__item:nth-child(3)
+		display: none
+
+@media (min-width: 500px)
+	.info__promo span
+		display: none
+
+@media (max-width: 800px)
+	.about__wrapper .about__carousel .about-item .about-a
+		h3 
+			font-size: 22px
+		p 
+			font-size: 16px
+
+	.about__wrapper .about__carousel .about-item
+		height: 150px
+
+	.about__carousel .owl-nav 
+		.owl-next
+			height: 150px
+			right: -40px
+		.owl-prev
+			height: 150px
+			left: -40px
+
+	.about__wrapper .owl-dots
+		position: relative
+		background: #fff
+		top: -18px
+		width: 120px
+		margin: 0 auto
+		.owl-dot
+			margin: 10px
+
+	.footer .footer__wrapper 
+		.footer__item:nth-child(3) a
+			font-size: 20px
+		.footer__item:nth-child(2) 
+			.footer_social_wrapper 
+				margin-top: 20px
+				.footer_social:nth-child(1)
+					font-size: 66px
+				.footer_social
+					height: 100px
+					font-size: 75px
+			h3 
+				display: none
+
+	.footer .footer__wrapper .footer__item 
+		p 
+			font-size: 16px
+		h3
+			font-size: 20px
+
+@media (max-width: 768px)
+	.navbar a:hover 
+		color: #353535
+		background: #000
+		box-shadow: inset 0 -4px 0 0 #000
+
+@media (min-width: 700px) and (max-width: 825px)
+	.navbar a:nth-child(6) 
+		padding: 0
+		.entrance
+			display: none
+
+	.navbar a 
+		padding: 0px 0px 0px 0px
+		.login_button
+			top: 25px
+			left: -20px
+
+	.navbar
+		width: 98%
+		
+@media (max-width: 700px)
+	.navbar a
+		margin: 0 auto
+		padding: 10px 10px 10px 10px
+		line-height: normal
+		&:nth-child(6)
+			padding: 10px 10px 10px 10px
+
+	.logo-tablet
+		left: 24%
+
+@media (max-width: 650px)
+	.info__stat
+		width: 100%
+		top: 0
+
+	.info__promo, .news
+		top: 0
+
+	.angel-div .info-angel
+		bottom: 1px
+
+	.info__promo .promo__item_3
+		margin-bottom: 40px
+
+	.news .news__wrapper .news__title a
+		display: none
+
+	.news .news__wrapper .news__title h2, .news__about .about__title h2
+		text-align: center
+		width: 100%
+
+	.news .news__wrapper .news__title-mobile 
+		padding: 0
+		a 
+			font-size: 18px
+			width: 100%
+			text-align: center
+
+	.news__about .about__title a
+		display: none
+
+	.about__wrapper .about__carousel .about-item .about-a 
+		h3, p
+			margin-top: 0
+
+	.news__about
+		width: 100%
+		.about__wrapper 
+			width: 95%
+			.owl-nav
+				display: none
+			.about__carousel .about-item
+				border: none
+			.owl-dots
+				top: 5px
+
+@media (min-width: 500px) and (max-width: 700px)
+	.navbar
+		padding: 10px
+
+@media (max-width: 600px)
+	.logo-tablet
+		left: 19%
+
+	.footer .footer__wrapper
+		width: 100%
+		padding: 0
+		flex-direction: column
+		.footer__item:nth-child(2)
+			order: 0
+		.footer__item
+			width: 100%
+			text-align: center
+			p a 
+				display: block
+				text-align: center
+				width: 90%
+				margin: 0 auto
+				padding: 10px
+				border: 1px solid #666
+				margin-top: 20px
+				box-sizing: border-box
+		.footer__item:nth-child(3)
+			text-align: center
+			h3 
+				padding-right: 0
+				margin-bottom: 15px
+				margin-top: 30px
+			a 
+				width: 90%
+				display: block
+				margin: 0 auto
+				margin-bottom: 20px
+				box-sizing: border-box
+
+@media (max-width: 500px)
+	.navbar a:nth-child(n+2)
+		display: none
+
+	.navbar 
+		width: 100%
+		height: 50px
+		margin: 0
+		background: #826651
+		padding: 0
+		.nav-one
+			padding: 15px
+
+	.navbar a
+		&:focus
+			color: #cccccc
+		&:hover 
+			background: #694d38
+			box-shadow: inset 0 -4px 0 0 #694d38
+
+	.navbar a
+		font-size: 18px
+		&:nth-child(6)
+			font-size: 0.5em
+
+	.navbar .navbar__popup a
+		position: relative
+		top: 10px
+
+	.nav_form
+		top: -93px
+		right: -6px
+
+	.back-image, .logo-tablet
+		display: none
+
+	.info__stat .stat-wrapper
+		flex-direction: column
+		text-align: center
+
+	.stat__one, .stat__two
+		width: 100%
+		box-sizing: border-box
+
+	.info__stat .stat-wrapper h2
+		margin-bottom: 0
+		font-size: 24px
+		text-transform: uppercase
+		margin-top: 20px
+
+	.stat-wrapper .stat__one span
+		display: none
+
+	.info__stat .stat-wrapper p
+		margin: 0 0 10px 0
+		font-size: 16px
+
+	.info__stat .stat__four
+		flex-direction: column
+
+	.info__stat .stat__four .four__item_1, .info__stat .stat__four .four__item_2, .info__stat .stat__four .four__item_3, .info__stat .stat__four .four__item_4
+		width: 100%
+		display: flex
+		padding: 10px 0 10px 10px
+		p 
+			text-align: right
+			font-size: 18px
+			width: 50%
+		h2
+			font-size: 36px
+			width: 50%
+			line-height: 60px
+
+	.info__promo .promo__item_1, .info__promo .promo__item_2, .info__promo .promo__item_3
+		display: block
+		text-align: center
+		padding: 40px 10px 10px 10px
+
+	.info__promo .promo__item_1, .info__promo .promo__item_2
+		border-bottom: 0px
+
+	.info__desktop
+		display: none
+
+	.news__about .about__wrapper .about__carousel .about-item .about-img img
+		position: relative
+		top: 20px
+
+	.news .news__wrapper
+		width: 90%
+		.news__sale
+			width: 100%
+			margin: 0 auto
+			.sale__item
+				width: 80%
+				margin-left: 50px
+
+
+@media (min-width: 400px)
+	.info__promo:before
+		left: 75px
+
+@media (min-width: 500px)
+	.navbar__popup, .logo-mobile, .info__promo:before
+		display: none
+
+	.owl-mobile
+		display: none
+
+//Page 2 Work @ media 
+
+@media (max-width: 1200px)
+	.work-photo .photo_wrapper .photo_first .ours-work
+		width: 140vw
+
+	.work-photo .photo_wrapper .photo_two
+		flex-direction: column
+		.photo_item
+			display: flex
+			width: 100%
+			picture .ours-work
+				width: 42vw
+				display: block
+			.photo_text
+				position: relative
+				display: flex
+				justify-content: center
+				flex-direction: column
+				padding: 20px
+			.photo_elem
+				position: absolute
+				bottom: 40px
+				display: flex
+				flex-wrap: wrap
+
+	.price 
+		.price_wrapper 
+			padding-top: 100px
+			h2 
+				font-size: 28px
+			.price_table_tablet table
+				font-size: 18px
+				tr td, tr th
+					padding: 20px
+		.price_clock p
+			font-size: 18px
+
+@media (max-width: 1100px)
+	.work-photo .photo_wrapper .photo_first
+		&:before
+			left: -1px
+			transform: rotateZ(0deg)
+		&:after
+			left: 10px
+		.photo_text
+			justify-content: start
+			h3 
+				font-size: 28px
+			p 
+				font-size: 20px
+			.photo_elem 
+				span:nth-child(3) img
+					width: 50px
+					height: 15px
+					left: -60px
+				span
+					margin-right: 80px
+					left: 60px
+					img 
+						width: 25px
+						height: 25px
+						top: -5px
+						left: -35px
+
+	.work-photo .photo_wrapper .photo_two .photo_item .photo_text 
+		justify-content: start
+		h3 
+			font-size: 28px
+		p 
+			font-size: 20px
+		.photo_elem 
+			span:nth-child(2) img 
+				width: 50px
+				height: 15px
+				left: -60px
+			span 
+				left: 40px
+				img
+					width: 25px
+					height: 25px
+					top: -5px
+					left: -35px
+
+@media (max-width: 1000px)
+	.work-photo 
+		width: 90%
+		.photo_wrapper .photo_first .photo_text
+			padding: 20px
+
+	.price .price_wrapper .price_table_tablet table tr td, .price .price_wrapper .price_table table tr th
+		padding: 10px
+
+@media (max-width: 800px)
+	.work-photo .photo_wrapper .photo_two
+		margin-bottom: 30px
+
+	.price 
+		padding: 1px 0 80px 0
+		.price_wrapper
+			width: 90%
+			flex-direction: column
+			.price_table_tablet table
+				width: 100%
+		.price_clock 
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 20px
+			width: 100%
+			box-sizing: border-box
+			margin-top: 20px
+			.pclock
+				width: 20%
+				margin: 0
+			p 
+				font-size: 28px
+				margin: 0
+				box-sizing: border-box
+
+@media (max-width: 650px)
+	.work-photo .photo__title 
+		display: block
+		text-align: center
+		h2 
+			font-size: 32px
+		a
+			display: none
+
+@media (max-width: 600px)
+	
+	.price .price_wrapper 
+		padding-top: 0
+		h2 
+			position: relative
+			text-align: center
+		.price_table_tablet
+			display: none
+		.price_table_mobile
+			margin-top: 40px
+
+
+@media (max-width: 500px)
+	.work-angel-div
+		display: none
+
+	.work-photo .photo_wrapper .photo_first
+		flex-direction: column
+		&:before
+			bottom: 400px
+			top: auto
+		&:after
+			bottom: 413px
+			top: auto
+
+	.work-photo .photo_wrapper .photo_two .photo_item
+		flex-direction: column
+		picture .ours-work
+			width: 100%
+
+	.work-photo .photo_wrapper 
+		.photo_first .photo_text
+			padding: 20px 20px 100px 20px
+		.photo_two .photo_item .photo_text
+			padding: 20px 20px 80px 20px
+
+	.price .price_wrapper
+		width: 95%
+
+	.price .price_clock 
+		p
+			font-size: 22px
+			padding: 10px
+		.pclock
+			width: 30%
+
+@media (max-width: 330px)
+	.price .price_clock 
+		p
+			font-size: 20px
+		.pclock
+			width: 60%
+
+
+@media (min-width: 600px)
+	.price_table_mobile
+		display: none
+
+//Page 3 Form @ media
+
+@media (max-width: 1600px)
+	.main_form 
+		.fail, .success
+			left: 500px
+
+@media (max-width: 1300px)
+	.main_form 
+		.fail, .success
+			left: 300px
+
+@media (max-width: 1000px)
+	.main_form .form_wrapper .form_service .form_service_set label
+		width: 45%
+
+	.main_form 
+		.fail, .success
+			left: 100px
+			padding: 20px
+			width: 400px
+			height: 380px
+			a
+				font-size: 24px
+			h2 
+				font-size: 30px
+			p
+				font-size: 22px
+
+@media (max-width: 800px)
+	.main_form .form_wrapper 
+		input 
+			padding: 20px
+		.form_data 
+			input[type="text"]
+				width: 33%
+			input[type="phone"]
+				width: 100%
+			input[type="email"]
+				width: 100%
+			textarea
+				padding: 20px
+		.form_title 
+			h2
+				font-size: 	30px
+			a
+				font-size: 20px
+		.form_model legend, .form_service legend
+			font-size: 24px
+
+@media (max-width: 600px)
+	.main_form .form_wrapper 
+		width: 95%
+		.form_title
+			padding: 0
+			a 
+				display: none
+			h2 
+				padding: 40px 60px
+		.form_data 
+			input[type="text"]
+				width: 100%
+				margin-bottom: 10px
+			input[type="text"]:nth-child(3)
+				margin-bottom: 40px
+			input[type="phone"] 
+				margin-bottom: 10px
+			input[type="email"]
+				margin-bottom: 40px
+
+@media (max-width: 500px)
+	.angel-div-pinky
+		display: none
+
+	.main_form 
+		padding-bottom: 60px
+		.form_wrapper 
+			fieldset
+				padding: 0
+			.form_model .form_model_set
+				padding: 10px
+				justify-content: center
+				label
+					width: 25%
+					margin-top: 50px
+					p
+						&:before
+							left: 35px
+						&:after
+							left: 45px
+			.form_service .form_service_set 
+				padding: 20px
+				label 
+					width: 100%
+
+	.main_form 
+		.fail, .success
+			left: 100px
+			padding: 20px
+			width: 320px
+			height: 420px
+			left: 0
+
+@media (max-width: 400px)
+	.main_form .form_wrapper .form_model .form_model_set label
+		width: 32%
+		p 
+			&:before
+				left: 25px
+			&:after
+				left: 35px
+
+	.main_form .form_wrapper 
+		.form_title h2
+			font-size: 22px
+			padding: 15px 30px
+		.form_model legend, .form_service legend
+			font-size: 18px
+

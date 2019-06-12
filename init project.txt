@@ -13,4 +13,6 @@ git push                 отправка на сервер
 npm init --yes           создает package.json
 --yes                    установит на все вопросы дефолтные ответы
 
-npm i gulp               и др пакеты, создаст папку node_modules
+npm i gulp -S            и др пакеты, создаст папку node_modules
+-S                       для записи в dependencies
+-D                       для записи в devDependencies

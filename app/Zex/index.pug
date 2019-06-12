@@ -1,0 +1,192 @@
+doctype html
+html
+		head
+		meta(charset= "utf-8")
+		meta(name='viewport', content="initial-scale=1.0, width=device-width")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(rel="stylesheet" href="../css/style.css")
+		link(rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="../libs/owl.carousel.css")
+		link(rel="stylesheet" href="../libs/magnific.css")
+		title
+		body
+			.main
+				.navbar-background
+					.logo-mobile
+						img(src="../img/svg/logotype-mobile.svg", alt="лого мобайл")
+					.navbar
+						a(class="nava nav-one" href="index.html") главная
+						a(href="work.html") наши работы
+						a(href="form.html") записаться
+						a(href="https://htmlacademy.ru/about") контакты
+						a(href="https://htmlacademy.ru/") HTML ACADEMY
+						a.navbar_form(href="#popup_form") 
+							span 
+								img.login_button(src="../img/svg/login.svg", alt="login button")
+								span.entrance войти 
+						.navbar__popup(href="#")
+							a.popup_button(href="#popup_menu")
+								img.popup_icon(src="../img/svg/menu_btn.svg", alt="menu button")
+							.popup_menu(id="popup_menu" class="mfp-hide")
+								a(href="index.html") главная 
+								a(href="work.html") наши работы
+								a(href="form.html") записаться
+								a(href="https://htmlacademy.ru/about") контакты
+								a(href="https://htmlacademy.ru/") HTML ACADEMY
+								a.navbar_form(href="#popup_form") Войти
+									img.login_button(src="../img/svg/login-mobile.svg", alt="login button")
+						.nav_form(id="popup_form" class="mfp-hide")
+							form(action="login" method="post")
+								h3 Личный кабинет
+								p Введите свой логин и пароль, чтобы войти
+								input(type="text" name="username" placeholder="Логин")
+								span
+								input(type="password" name="password" placeholder="Пароль")
+								span
+								br
+								input(type="checkbox" checked)
+								span Запомните меня 
+								a.form-elem(href="#") Я забыл пароль!
+								br
+								input(type="submit" name="submit" value="Войти")
+								a.form-close.mfp-close(href="#") Закрыть
+				picture
+					source(media="(min-width: 768px)" srcset="../img/back-tablet.jpg")
+					source(media="(min-width: 1200px)" srcset="../img/back-desktop.jpg")
+					img(class="back-image" src="/img/back-desktop.jpg" alt="barbershop")
+				img.logo-tablet(src="../img/svg/logotype-tablet.svg" alt="barbershop-tablet")
+				img.logo-desktop(src="../img/svg/logotype-desktop.svg" alt="barbershop-desktop")
+				.info
+					.info__stat
+						.stat-wrapper
+							.stat__one
+								h2 Стрижка у нас это выгодно!
+								span * - приведенные данные ложь
+							.stat__two
+								p Мужская стрижка требует точного подхода обратимся к статистике:
+								span * - приведенные данные ложь
+						.stat__four
+							.four__item_1
+								h2 1 500 *
+								p рублей вложений
+							.four__item_2
+								h2 7 200
+								p секунд времени мастера
+							.four__item_3
+								h2 90 000
+								p постриженных волос
+							.four__item_4
+								h2 500 000 *
+								p лайков и комплиментов
+					.owl-mobile
+						.info__promo.info-carousel.owl-carousel.owl-theme.owl-nav
+							.promo__item_1
+								<svg width="95" height="94" viewBox="0 0 95 94"><image id="advantage-1-illustration.svg" width="95" height="94" xlink:href="data:img/png;base64,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"/></svg>
+								div
+									h2 Быстро
+									p Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
+							.promo__item_2
+								<svg width="95" height="88" viewBox="0 0 95 88"><image id="advantage-2-illustration.svg" width="95" height="88" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABYCAMAAACkl9t/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32BwzxCvQI8w7xXSZgYAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wUGEAUlm9qQUgAABJlJREFUaN6tmevCrRAQhiWnEun+b3YvjJJT+Pb8+A5r6cFrzBgh1GN4JZTxKxhnlKy43HR5Wwdb0IccG6cC/5WPt/1q2b7JP/DX4/q2Q03yRSzLfpBNKYv6/dzIEU+Li3u6mumzjx/Rd6Jk9r1U5O5j919j6rsj8pOv2P2swNUxwOoY30KY8Iw523ypQ0NdhwdFzLW6v3SkmJEtvgJpDJHo26RXn7wWfWvwyQg92Pp2KlLlS/DJ40uZt0ymk4+9U5h1hI5QulFq/NOP4xiR5mcq3XSqzAf8NkbPh8/L/unxo9r8RL1q8iwF/DmKf7m+M1ziy30Sj9L4vRfjwzT+TIe/lfh6Ft+S5+H7Dagm8ChNQUchPksz5ZjWMu8RBb7z4GMGj0TKlznfqcMHdy0YLcmj1pgv+bT4ufzOeyiXEd+FZD2Hl0XvMbCHfRO7uGZOnSy2uc21hhz2DH/Kd1CauII8IQjdw+eT+Cx2OnnYBROwLZyDiVk+L8iziLAPQovp4ae7C0IzhyyAIDyRPpoS5GDeCFltsEoS+wVHHwJ/I9gfHc6DN3altutE/pC53LS045uuyKByeMl0CAyH7wzk+Vrds49+ywMrfC7gvx/ykE76Ze7zufSLjRD7lEf2lAHe6HP+tw+xH99+3N677wDGnfeUS6bfUffmb/b/xYePZuSM4u+xPfkTK5IVZiaqXwDsumnhHwcn+ZEUv3MvjesjL4xtsLf4YYx7MfW/o+ca862s2i0vbeBD9tvLLqYSeSK+1ZW5xWsFB1jcWnZQiTwRnzhl7OeN3RXCV62JSuSJ+G7m6MN9QJ5qeFWJPBFf9fBh5+oePp3gs2fmn3w1zFcKlndT6pPvNezlS3EkNdsvMuisko9OJ3qEv6XwZxXZq5PnCzzAp1fbOA2R6E4MDPXz9dVhv4ms2MevaIekfFPav73Z6mcheBuU8on7lP2R/17dlM/c8Yv9Bz7O+D4xkmhuf+DfGfbhc6fMGnfe6z65qYzvIuOK4NfbxCj+Ufjmh4HzKw9feJQvcr71cb54LbLwOyhQ9PxLfrqAFmluxWaIL3K+PxYuEKGy+K5GOoj9O5bnV6kiX4Dk+an7xHm940ssD3PnZ5E2CT24RXidLVQIqwaKAEZJcpMeBx/h+E6g0glUgIcVdl79xBGdPm0hfztL4bqQFvpluSIlvnNwCvXXmengzRRAwD8/+G7IJ/D9Q9kERGndgY/afDd8tgS+Sp3MmY3s2xzftVI33z+VSOE6lVN8dQ8f+OeVa7EXF6WHD7cxEb9gpLyMPXwdnKfBP4tL0sV3gTm8Aai08tdx6wzfh0a4vqrw/VVrqaz55PtH7ytE+FQFs4rLda9u0k++21k8fj+CdbnYZGiC7xNT/H5nrUR6gxt83MRHF6D12r9cEbXjm8c/t/MNfqWmbPI9ni4d/FrJ2uB7z3njl+hlWmzV/AH8QrUK71beeH9/KMh95+WtHt6Br/M3kv6SRS85v8OwIvbiLXY1zoh49SKcU4zzT9I4Sthq6e7Avp0Y5EvCr0+j0XKP8bfOYxbDM/yBi7H7xc0If6TMCOEk4f8DaTTGWT1+shIAAAAASUVORK5CYII="/></svg>
+								div
+									h2 Круто
+									p Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+							.promo__item_3
+								<svg width="95" height="91" viewBox="0 0 95 91"><image id="advantage-3-illustration.svg" width="95" height="91" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABbCAMAAAAiA6nRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32CvcM9AMBCP76sTLi0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wUGEAUcxN8YWgAABDRJREFUaN7t2dvSqyoMAGA8ggpI3/9l10+ClkOCaL3ZM5urTqufEANGKkRL64dxmuXnaHKexqGnD+3S1mCr5SvHTS6q/9Xv1+1Ta9va/+APy+e6LcNDX8Vh2ZZRaW3+vjZaq3GJhyXVAz/St1ETB+hxo67Q5uvz3FlZtg9WzWcf9A3f7uEsN/ai3vrRhWN32+preYw67bqZ/A9yMtkgjsN1m78ffU91+02mJfvlGMPe4NsQ0ikLu4mzSZrspCncLHvlB0bmGWPTebblNz3EVJq6bxwVgG/QzrYX48bwOVPzA7+WaVJM2zKxVuoCBO+I2bQWftkHoV15AYI35ZmiXIgW4ihTXiCOoCPvHLS58GfqsB6ywFnKxwyR9GrQ6AsrsY+EP7HBueGHEE2lr2q8GAt/FLULqNzv8WvBnVX4XE867Gif+RCASbBtbguPX38g0HPqKz514vGdzfW8j4miYh9T04hKM/EFHH/on2miJI1u3yiqzXxXuK3SE48i9/Wh+9KKi6bwCpuqHeRRmAU4APhuJ3LHttQm52JhEx9zaD987H7Wj/kGH69GeFvPAZzRzwd9i/98Ml8dd8B/JYnu/+jDACT6A9X9X30YwAD+BLF62Yd7OoEPn8TLPqwSzvsaRvK6D1HXHSa/K+fJvfycC7/zYdn/fD8piYepkTf4qN46fT8/tw4DQRQDf4ELRYOO2kTpa1xwnD6c3WH46fVKZ6ENy3jRknrm9A3+tGZEzc95VfM7DMz+YR9GuV/wour7DNkhT6Ymv+Tr/gQ99+kztvgEX/f9srmJ49Arfyf4ug8dEsUBtD9RfN3XN3yaf81n+Ld8jn/JZ/l3fJ5/x09bUro1+kO7n1aGVR+eMFA8jM1+Vnhezl8pcBVq9DPeVH1cOXEVavNz3lV9XDn9KFybz/Cc7yDygPQtPsczfo8/2SylWZ/lGR+WT4v1w3Tt8zzj+xu78fVP5ld4xj/qn4GdwZrlVfK2R/pYFvr688MFSLN8euNJH1YtqG8XLkCnv1V52vcjXCr1f+Rn78VFkUX5Uf0PBfrG+1c86fusdPH7l2b9K57y4dTj/Qtm2sz6VzzlQ3XfBx8fgLrFJwvc0oczYRNInAOQDX5r/SyP7of9BxjAeum31s/r2f14/6TYc3laP8NeTrJ/gik01/3m+nk+kufrwyqaP4dTfy152oe+bl3qm/LI1CerIMrHs0zmY4TSdexR/Ywr99jlPr7wJmvBk/oZN9+O3b1k/1bmF3hQPx+bwIQfRhZd4H79jHy8wV3G+3uB2/Vz+JNDd7QfMvx82afrZxdVq6kfthRUx/nhAsdEvlk/hy3YhM//f8HNY8v7lfrZupIv/z9y4WFv72zQzNCjvfx7p/z/y2z4OvBg/2fwhcCVL+yiv0NvbhBPv8166SehveVD+9//b/g/709e+A/mF+X/Awb961iupEGgAAAAAElFTkSuQmCC"/></svg>
+								div
+									h2 Дорого
+									p Наши мастера профессионалы своего дела не могут стоить дешево. К тому же, разве цена не дает определенный статус.
+					.info__desktop
+						.info__promo
+							.promo__item_1
+								<svg width="95" height="94" viewBox="0 0 95 94"><image id="advantage-1-illustration.svg" width="95" height="94" xlink:href="data:img/png;base64,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"/></svg>
+								div
+									h2 Быстро
+									p Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
+							.promo__item_2
+								<svg width="95" height="88" viewBox="0 0 95 88"><image id="advantage-2-illustration.svg" width="95" height="88" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABYCAMAAACkl9t/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32BwzxCvQI8w7xXSZgYAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wUGEAUlm9qQUgAABJlJREFUaN6tmevCrRAQhiWnEun+b3YvjJJT+Pb8+A5r6cFrzBgh1GN4JZTxKxhnlKy43HR5Wwdb0IccG6cC/5WPt/1q2b7JP/DX4/q2Q03yRSzLfpBNKYv6/dzIEU+Li3u6mumzjx/Rd6Jk9r1U5O5j919j6rsj8pOv2P2swNUxwOoY30KY8Iw523ypQ0NdhwdFzLW6v3SkmJEtvgJpDJHo26RXn7wWfWvwyQg92Pp2KlLlS/DJ40uZt0ymk4+9U5h1hI5QulFq/NOP4xiR5mcq3XSqzAf8NkbPh8/L/unxo9r8RL1q8iwF/DmKf7m+M1ziy30Sj9L4vRfjwzT+TIe/lfh6Ft+S5+H7Dagm8ChNQUchPksz5ZjWMu8RBb7z4GMGj0TKlznfqcMHdy0YLcmj1pgv+bT4ufzOeyiXEd+FZD2Hl0XvMbCHfRO7uGZOnSy2uc21hhz2DH/Kd1CauII8IQjdw+eT+Cx2OnnYBROwLZyDiVk+L8iziLAPQovp4ae7C0IzhyyAIDyRPpoS5GDeCFltsEoS+wVHHwJ/I9gfHc6DN3altutE/pC53LS045uuyKByeMl0CAyH7wzk+Vrds49+ywMrfC7gvx/ykE76Ze7zufSLjRD7lEf2lAHe6HP+tw+xH99+3N677wDGnfeUS6bfUffmb/b/xYePZuSM4u+xPfkTK5IVZiaqXwDsumnhHwcn+ZEUv3MvjesjL4xtsLf4YYx7MfW/o+ca862s2i0vbeBD9tvLLqYSeSK+1ZW5xWsFB1jcWnZQiTwRnzhl7OeN3RXCV62JSuSJ+G7m6MN9QJ5qeFWJPBFf9fBh5+oePp3gs2fmn3w1zFcKlndT6pPvNezlS3EkNdsvMuisko9OJ3qEv6XwZxXZq5PnCzzAp1fbOA2R6E4MDPXz9dVhv4ms2MevaIekfFPav73Z6mcheBuU8on7lP2R/17dlM/c8Yv9Bz7O+D4xkmhuf+DfGfbhc6fMGnfe6z65qYzvIuOK4NfbxCj+Ufjmh4HzKw9feJQvcr71cb54LbLwOyhQ9PxLfrqAFmluxWaIL3K+PxYuEKGy+K5GOoj9O5bnV6kiX4Dk+an7xHm940ssD3PnZ5E2CT24RXidLVQIqwaKAEZJcpMeBx/h+E6g0glUgIcVdl79xBGdPm0hfztL4bqQFvpluSIlvnNwCvXXmengzRRAwD8/+G7IJ/D9Q9kERGndgY/afDd8tgS+Sp3MmY3s2xzftVI33z+VSOE6lVN8dQ8f+OeVa7EXF6WHD7cxEb9gpLyMPXwdnKfBP4tL0sV3gTm8Aai08tdx6wzfh0a4vqrw/VVrqaz55PtH7ytE+FQFs4rLda9u0k++21k8fj+CdbnYZGiC7xNT/H5nrUR6gxt83MRHF6D12r9cEbXjm8c/t/MNfqWmbPI9ni4d/FrJ2uB7z3njl+hlWmzV/AH8QrUK71beeH9/KMh95+WtHt6Br/M3kv6SRS85v8OwIvbiLXY1zoh49SKcU4zzT9I4Sthq6e7Avp0Y5EvCr0+j0XKP8bfOYxbDM/yBi7H7xc0If6TMCOEk4f8DaTTGWT1+shIAAAAASUVORK5CYII="/></svg>
+								div
+									h2 Круто
+									p Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+							.promo__item_3
+								<svg width="95" height="91" viewBox="0 0 95 91"><image id="advantage-3-illustration.svg" width="95" height="91" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABbCAMAAAAiA6nRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32CvcM9AMBCP76sTLi0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wUGEAUcxN8YWgAABDRJREFUaN7t2dvSqyoMAGA8ggpI3/9l10+ClkOCaL3ZM5urTqufEANGKkRL64dxmuXnaHKexqGnD+3S1mCr5SvHTS6q/9Xv1+1Ta9va/+APy+e6LcNDX8Vh2ZZRaW3+vjZaq3GJhyXVAz/St1ETB+hxo67Q5uvz3FlZtg9WzWcf9A3f7uEsN/ai3vrRhWN32+preYw67bqZ/A9yMtkgjsN1m78ffU91+02mJfvlGMPe4NsQ0ikLu4mzSZrspCncLHvlB0bmGWPTebblNz3EVJq6bxwVgG/QzrYX48bwOVPzA7+WaVJM2zKxVuoCBO+I2bQWftkHoV15AYI35ZmiXIgW4ihTXiCOoCPvHLS58GfqsB6ywFnKxwyR9GrQ6AsrsY+EP7HBueGHEE2lr2q8GAt/FLULqNzv8WvBnVX4XE867Gif+RCASbBtbguPX38g0HPqKz514vGdzfW8j4miYh9T04hKM/EFHH/on2miJI1u3yiqzXxXuK3SE48i9/Wh+9KKi6bwCpuqHeRRmAU4APhuJ3LHttQm52JhEx9zaD987H7Wj/kGH69GeFvPAZzRzwd9i/98Ml8dd8B/JYnu/+jDACT6A9X9X30YwAD+BLF62Yd7OoEPn8TLPqwSzvsaRvK6D1HXHSa/K+fJvfycC7/zYdn/fD8piYepkTf4qN46fT8/tw4DQRQDf4ELRYOO2kTpa1xwnD6c3WH46fVKZ6ENy3jRknrm9A3+tGZEzc95VfM7DMz+YR9GuV/wour7DNkhT6Ymv+Tr/gQ99+kztvgEX/f9srmJ49Arfyf4ug8dEsUBtD9RfN3XN3yaf81n+Ld8jn/JZ/l3fJ5/x09bUro1+kO7n1aGVR+eMFA8jM1+Vnhezl8pcBVq9DPeVH1cOXEVavNz3lV9XDn9KFybz/Cc7yDygPQtPsczfo8/2SylWZ/lGR+WT4v1w3Tt8zzj+xu78fVP5ld4xj/qn4GdwZrlVfK2R/pYFvr688MFSLN8euNJH1YtqG8XLkCnv1V52vcjXCr1f+Rn78VFkUX5Uf0PBfrG+1c86fusdPH7l2b9K57y4dTj/Qtm2sz6VzzlQ3XfBx8fgLrFJwvc0oczYRNInAOQDX5r/SyP7of9BxjAeum31s/r2f14/6TYc3laP8NeTrJ/gik01/3m+nk+kufrwyqaP4dTfy152oe+bl3qm/LI1CerIMrHs0zmY4TSdexR/Ywr99jlPr7wJmvBk/oZN9+O3b1k/1bmF3hQPx+bwIQfRhZd4H79jHy8wV3G+3uB2/Vz+JNDd7QfMvx82afrZxdVq6kfthRUx/nhAsdEvlk/hy3YhM//f8HNY8v7lfrZupIv/z9y4WFv72zQzNCjvfx7p/z/y2z4OvBg/2fwhcCVL+yiv0NvbhBPv8166SehveVD+9//b/g/709e+A/mF+X/Awb961iupEGgAAAAAElFTkSuQmCC"/></svg>
+								div
+									h2 Дорого
+									p Наши мастера профессионалы своего дела не могут стоить дешево. К тому же, разве цена не дает определенный статус.
+				.angel-div
+					img.info-angel(src="../img/svg/angle_div.svg", alt="image")
+				.news
+					.news__wrapper
+						.news__title 
+							h2 НОВОСТИ АКЦИИ
+							a(href="#") ПОКАЗАТЬ ВСЕ 
+						.news__sale
+							.sale__item
+								.sale-date 
+									span 29 <br>
+									b СЕНТ
+								img.triangle(src="../img/svg/triangle.svg", alt="image")
+								p Нам наконец завесзли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.
+							.sale__item
+								.sale-date 
+									span 19 <br> 
+									b СЕНТ
+								img.triangle(src="../img/svg/triangle.svg", alt="image")
+								p В нашей команде пополнение, Борис &laquo Бритва &raquo Стригунец, пополнил наши стройные ряды. Спешите записаться!
+							.sale__item
+								.sale-date 
+									span 9 <br>
+									b СЕНТ
+								img.triangle(src="../img/svg/triangle.svg", alt="image")
+								p Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
+						.news__title-mobile
+							a(href="#") ПОКАЗАТЬ ВСЕ 
+					.news__about
+						.about__title
+							h2 ОТЗЫВЫ О НАС
+							a(href="#") ОСТАВИТЬ СВОЙ
+						.about__wrapper
+							.about__carousel.owl-carousel
+								.about-item
+									.about-img
+										img(src="../img/tatuman-1.jpg", alt="tatuman")
+									.about-a
+										h3 Ден Марек
+										p Классные барберы, и салон на уровне! Первый раз пришел когда барбершоп открылся, так и хожу сюда, здесь очень классная атмосфера.
+								.about-item
+									.about-img
+										img(src="../img/tatuman-2.jpg", alt="tatuman")
+									.about-a
+										h3 Стен Вилс
+										p Раньше всегда проходил мимо этого барбершопа, но в последний задался вопросом:"А почему бы и нет. Схожу сюда". И не прогадал. Подстригли очень круто, жена довольна.
+								.about-item
+									.about-img
+										img(src="../img/tatuman-3.jpg", alt="tatuman")
+									.about-a
+										h3 Линда Лорейн
+										p Начала ходить в барбершоп, хотя ранее всегда стриглась в обычной парикмахерской. Насмотрелась на работы мастеров, теперь вот тоже подумываю о бороде, мастера всё так классно и подстригут, и поровняют!
+				.angel-div-gray
+					img.info-angel(src="../img/svg/angle_div_gray.svg", alt="image")
+				.footer
+					.footer__wrapper
+						.footer__item
+							h3 БАРБЕРШОП БОРОДИНСКИЙ
+							p г.Санкт-Питербург, ул.Большая Конюшенная 19/8 
+								a(href="#") Тел.: +7 (812) 555-66-66
+						.footer__item
+							h3 Давайте дружить!
+							.footer_social_wrapper
+								a.footer_social(href="#")
+									img(src="../img/vk-icon-big.png", alt="vkontakt")
+								a.footer_social(href="#")
+									img(src="../img/facebook-icon-big.png", alt="facebook")
+								a.footer_social(href="#")
+									img(src="../img/insta-icon-big.png", alt="instagram")
+						.footer__item
+							h3 Разработано:
+							a(href="#") HTML ACADEMY
+
+script(src="../js/jquery.min.js")
+script(src="../js/magnific.js")
+script(src="../js/owl.carousel.min.js")
+script(src="../js/common.js")
