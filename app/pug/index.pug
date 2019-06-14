@@ -9,24 +9,45 @@ html
 		link(rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css")
 		link(rel="stylesheet" href="../libs/owl.carousel.css")
 		link(rel="stylesheet" href="../libs/magnific.css")
-		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+		link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald")
 		title Cat energy
 		body
 			.main
 				.header
 					.navbar
-						img(src="../img/svg/logo-desktop.svg", alt="Logo")
-						h2 ГЛАВНАЯ
-						h2 КАТАЛОГ ПРОДУКЦИИ
-						h2 ПОДБОР ПРОГРАММЫ
+						picture
+							source(media="(max-width: 600px)" srcset="../img/svg/logo-mobile.svg")
+							source(media="(max-width: 800px)" srcset="../img/svg/logo-tablet.svg")
+							img(src="../img/svg/logo-desktop.svg", alt="Logo")
+						.navbar_heads
+							a(href="index.html")
+								h2 ГЛАВНАЯ
+							a(href="#")
+								h2 КАТАЛОГ ПРОДУКЦИИ
+							a(href="#")
+								h2 ПОДБОР ПРОГРАММЫ
+						.navbar_popup
+							h2 CAT 
+								span ENERGY
+							a(href="index.html")
+								h2 ГЛАВНАЯ
+							a(href="#")
+								h2 КАТАЛОГ ПРОДУКЦИИ
+							a(href="#")
+								h2 ПОДБОР ПРОГРАММЫ
 					.header_wrapper
 						.header_title
 							h1 Функциональное питание для котов
 							p ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!
 							a(href="#") ПОДОБРАТЬ ПРОГРАММУ
-						img(src="../img/index-can.png", alt="Glass")
+						picture
+							source(media="(max-width: 600px)" srcset="../img/index-can-mobile.png")
+							source(media="(max-width: 800px)" srcset="../img/index-can-tablet.png")
+							img(src="../img/index-can.png", alt="Glass")
 					.header_background
-						img(src="../img/index-background-desktop.png", alt="Full Fed Cat")
+						picture
+							source(media="(max-width: 600px)" srcset="../img/index-background-mobile.png")
+							img(src="../img/index-background-desktop.png", alt="Full Fed Cat")
 					
 
 				.footer
