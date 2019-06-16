@@ -24,6 +24,19 @@
         padding: 10px 40px; }
         .header .navbar .navbar_heads a h2:hover {
           box-shadow: inset 0 -4px 0 0 #fff; }
+  .header .navbar .popup_button {
+    text-decoration: none;
+    color: #000; }
+    .header .navbar .popup_button h2 {
+      position: relative;
+      line-height: 2px;
+      font-family: "Oswald"; }
+      .header .navbar .popup_button h2 span:after {
+        position: absolute;
+        content: "\f0c9";
+        font-family: FontAwesome;
+        right: -80px;
+        font-size: 30px; }
 
 .header .header_wrapper {
   display: flex;
@@ -53,6 +66,30 @@
   top: 0;
   z-index: -1;
   width: 45vw; }
+
+.navbar_popup a {
+  position: relative;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  line-height: 64px;
+  color: #000;
+  top: -88px;
+  width: 100%;
+  height: 68px;
+  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 600;
+  background: #fff; }
+  .navbar_popup a:nth-child(1) {
+    border-top: 1px solid #ccc; }
+
+.mfp-container {
+  padding: 0 !important; }
+
+.mfp-close-btn-in .mfp-close {
+  background: #fff; }
 
 @media (max-width: 1200px) {
   .header .navbar .navbar_heads a h2 {
@@ -97,6 +134,8 @@
   .header .navbar {
     width: 95%;
     margin-top: 0; }
+    .header .navbar picture {
+      margin-right: 30px; }
     .header .navbar .navbar_heads {
       display: none; }
   .header .header_wrapper .header_title {
@@ -118,5 +157,5 @@
   .header .header_wrapper picture img {
     z-index: 0; }
   .header .header_background picture img {
-    top: 50px;
+    top: 60px;
     width: 100%; } }
