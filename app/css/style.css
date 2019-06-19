@@ -16,12 +16,13 @@
     .header .navbar .navbar_heads a {
       text-decoration: none; }
       .header .navbar .navbar_heads a h2 {
-        font-size: 20px;
+        font-size: 24px;
         font-family: "Oswald";
         font-weight: 400;
         color: #fff;
-        line-height: 25px;
-        padding: 10px 40px; }
+        line-height: 56px;
+        padding: 20px 0;
+        margin: 15px 25px; }
         .header .navbar .navbar_heads a h2:hover {
           box-shadow: inset 0 -4px 0 0 #fff; }
   .header .navbar .popup_button {
@@ -35,7 +36,7 @@
         position: absolute;
         content: "\f0c9";
         font-family: FontAwesome;
-        right: -80px;
+        right: 0;
         font-size: 30px; }
 
 .header .header_wrapper {
@@ -59,6 +60,9 @@
       font-family: "Oswald";
       padding: 10px 20px;
       background: #68b738; }
+  .header .header_wrapper picture {
+    width: 45%;
+    margin-top: 40px; }
 
 .header .header_background picture img {
   position: absolute;
@@ -66,6 +70,17 @@
   top: 0;
   z-index: -1;
   width: 45vw; }
+
+.navbar_popup .mfp-close {
+  position: absolute;
+  top: -42px;
+  left: 90%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: white;
+  color: #000 !important;
+  font-size: 60px; }
 
 .navbar_popup a {
   position: relative;
@@ -75,7 +90,7 @@
   border-bottom: 1px solid #ccc;
   line-height: 64px;
   color: #000;
-  top: -88px;
+  top: 9px;
   width: 100%;
   height: 68px;
   font-size: 20px;
@@ -88,12 +103,210 @@
 .mfp-container {
   padding: 0 !important; }
 
-.mfp-close-btn-in .mfp-close {
-  background: #fff; }
+.catalog {
+  position: relative;
+  top: 150px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .catalog .catalog_slim, .catalog .catalog_pro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    background: #f2f2f2;
+    padding: 40px;
+    box-sizing: border-box; }
+    .catalog .catalog_slim:before, .catalog .catalog_pro:before {
+      position: absolute;
+      content: "";
+      background: #68b738;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      top: 50px;
+      left: 50px; }
+    .catalog .catalog_slim h2, .catalog .catalog_pro h2 {
+      text-align: center;
+      font-family: "Oswald";
+      font-size: 36px;
+      margin-bottom: 60px; }
+    .catalog .catalog_slim p, .catalog .catalog_pro p {
+      font-size: 16px;
+      font-family: "Oswald";
+      color: #444; }
+    .catalog .catalog_slim a, .catalog .catalog_pro a {
+      position: relative;
+      text-decoration: none;
+      color: #000;
+      font-size: 20px;
+      font-family: "Oswald";
+      margin-top: auto; }
+      .catalog .catalog_slim a:after, .catalog .catalog_pro a:after {
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 120px;
+        background: url(../img/svg/right-arrow.svg) no-repeat;
+        width: 30px;
+        height: 12px; }
+  .catalog .catalog_slim:after {
+    position: absolute;
+    content: "";
+    background: url(../img/svg/cat-slim.svg) no-repeat;
+    width: 70px;
+    height: 100px;
+    top: 40px;
+    left: 65px; }
+  .catalog .catalog_pro:after {
+    position: absolute;
+    content: "";
+    background: url(../img/svg/cat-pro.svg) no-repeat;
+    width: 135px;
+    height: 55px;
+    top: 65px;
+    left: 20px; }
+
+.how {
+  position: relative;
+  top: 140px;
+  width: 80%;
+  margin: 0 auto; }
+  .how h2 {
+    font-family: "Oswald";
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 0; }
+  .how .how_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .how .how_wrapper .how_item {
+      position: relative;
+      max-width: 220px;
+      margin-top: 50px; }
+      .how .how_wrapper .how_item span {
+        position: absolute;
+        color: #f2f2f2;
+        font-family: "Oswald";
+        font-size: 250px;
+        right: 0;
+        top: -110px;
+        z-index: -1; }
+      .how .how_wrapper .how_item p {
+        font-family: "Oswald";
+        font-size: 16px;
+        color: #444;
+        padding-top: 100px;
+        padding-bottom: 40px; }
+      .how .how_wrapper .how_item:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background: #68b738; }
+      .how .how_wrapper .how_item:after {
+        position: absolute;
+        content: "";
+        top: 20px;
+        left: 15px;
+        width: 40px;
+        height: 40px; }
+      .how .how_wrapper .how_item:nth-child(1):after {
+        background: url(../img/advantage-1.png) no-repeat 100%; }
+      .how .how_wrapper .how_item:nth-child(2):after {
+        background: url(../img/advantage-2.png) no-repeat 100%; }
+      .how .how_wrapper .how_item:nth-child(3):after {
+        background: url(../img/advantage-3.png) no-repeat 100%; }
+      .how .how_wrapper .how_item:nth-child(4):after {
+        background: url(../img/advantage-4.png) no-repeat 100%; }
+
+.example {
+  position: relative;
+  top: 100px;
+  width: 80%;
+  margin: 0 auto; }
+  .example .ex_text {
+    display: inline-block;
+    width: 45%; }
+    .example .ex_text h2 {
+      font-size: 60px;
+      font-family: "Oswald";
+      font-weight: 400; }
+    .example .ex_text p {
+      font-size: 16px;
+      font-family: "Oswald"; }
+    .example .ex_text span {
+      font-family: "Oswald";
+      font-size: 16px; }
+    .example .ex_text .ex_day {
+      margin-left: 40px; }
+    .example .ex_text .ex_kilo, .example .ex_text .ex_day {
+      position: relative;
+      display: inline-block;
+      width: 250px;
+      height: 50px; }
+      .example .ex_text .ex_kilo p, .example .ex_text .ex_day p {
+        font-size: 30px;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 20px; }
+      .example .ex_text .ex_kilo span, .example .ex_text .ex_day span {
+        position: absolute;
+        top: 92px;
+        left: 55px;
+        background: #ffffff;
+        padding: 10px; }
+  .example .ex_img {
+    width: 45%;
+    display: inline-block; }
+    .example .ex_img .ex_scroll span {
+      font-family: "Oswald";
+      font-size: 24px; }
+
+@media (max-width: 1300px) {
+  .catalog {
+    top: 0; }
+    .catalog .catalog_slim, .catalog .catalog_pro {
+      padding: 20px; }
+      .catalog .catalog_slim:before, .catalog .catalog_pro:before {
+        top: 25px; }
+      .catalog .catalog_slim h2, .catalog .catalog_pro h2 {
+        font-size: 30px;
+        padding-left: 50px;
+        margin-bottom: 20px; }
+    .catalog .catalog_slim:after {
+      top: 15px; }
+    .catalog .catalog_pro:after {
+      top: 45px; }
+  .how {
+    top: 0; } }
 
 @media (max-width: 1200px) {
+  .header .navbar {
+    padding: 0; }
+    .header .navbar .navbar_heads a h2 {
+      padding: 10px 0;
+      font-size: 20px;
+      margin: 0 10px; }
+  .catalog .catalog_slim, .catalog .catalog_pro {
+    width: 49%; }
+    .catalog .catalog_slim h2, .catalog .catalog_pro h2 {
+      padding-left: 60px; } }
+
+@media (max-width: 1100px) {
   .header .navbar .navbar_heads a h2 {
-    padding: 10px 20px; } }
+    font-size: 18px;
+    margin: 0 5px; }
+  .catalog .catalog_slim, .catalog .catalog_pro {
+    width: 49%; }
+    .catalog .catalog_slim h2, .catalog .catalog_pro h2 {
+      padding-left: 100px; } }
 
 @media (max-width: 1000px) {
   .header .navbar .navbar_heads a h2 {
@@ -104,19 +317,69 @@
     width: 80%;
     margin: 0 auto; }
   .header .header_wrapper picture {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 100%; }
     .header .header_wrapper picture img {
       position: relative;
       width: 100%;
       height: 100%;
       top: -50px;
-      z-index: -1; } }
+      z-index: -1; }
+  .catalog {
+    margin-top: 0; }
+    .catalog .catalog_slim:before, .catalog .catalog_pro:before {
+      left: 25px; }
+    .catalog .catalog_slim h2, .catalog .catalog_pro h2 {
+      padding-left: 120px; }
+    .catalog .catalog_slim:after {
+      left: 35px; }
+    .catalog .catalog_pro:after {
+      left: 0; } }
 
 @media (max-width: 900px) {
   .header .navbar {
     padding: 0; }
     .header .navbar .navbar_heads a h2 {
-      padding: 5px 10px; } }
+      padding: 5px 10px; }
+  .catalog {
+    width: 100%;
+    padding: 20px;
+    top: -50px;
+    box-sizing: border-box; }
+    .catalog .catalog_slim, .catalog .catalog_pro {
+      width: 100%;
+      margin-top: 20px;
+      padding-right: 40%;
+      padding-bottom: 40px; }
+      .catalog .catalog_slim:before, .catalog .catalog_pro:before {
+        left: auto;
+        top: 50px;
+        right: 50px;
+        width: 160px;
+        height: 160px; }
+      .catalog .catalog_slim h2, .catalog .catalog_pro h2 {
+        padding: 0;
+        margin-right: auto; }
+      .catalog .catalog_slim p, .catalog .catalog_pro p {
+        margin-bottom: 40px; }
+    .catalog .catalog_slim:after {
+      top: 40px;
+      left: auto;
+      right: 70px;
+      width: 120px;
+      height: 180px;
+      background-size: 100%; }
+    .catalog .catalog_pro:after {
+      top: 90px;
+      left: auto;
+      right: 30px;
+      width: 220px;
+      height: 90px;
+      background-size: 100%; }
+  .how {
+    top: -80px; }
+    .how .how_wrapper .how_item {
+      margin: 50px auto 0 auto; } }
 
 @media (min-width: 600px) and (max-width: 1000px) {
   .header_background {
@@ -128,34 +391,119 @@
     width: 100%; }
     .header .navbar .navbar_heads a h2 {
       font-size: 18px;
-      padding: 3px 10px 3px 0; } }
+      padding: 3px 25px 3px 0; } }
+
+@media (max-width: 700px) {
+  .header .navbar .navbar_heads a h2 {
+    padding: 3px 10px 3px 0; } }
 
 @media (max-width: 600px) {
   .header .navbar {
     width: 95%;
     margin-top: 0; }
+    .header .navbar .popup_button {
+      width: 100%; }
+      .header .navbar .popup_button h2 {
+        text-align: center; }
     .header .navbar picture {
-      margin-right: 30px; }
+      margin-right: 0;
+      width: 0; }
     .header .navbar .navbar_heads {
       display: none; }
-  .header .header_wrapper .header_title {
-    color: #fff;
-    text-align: center;
-    width: 100%; }
-    .header .header_wrapper .header_title h1 {
-      font-size: 36px;
-      font-weight: 400; }
-    .header .header_wrapper .header_title p {
-      font-size: 14px;
-      font-weight: 400; }
-    .header .header_wrapper .header_title a {
-      position: relative;
-      top: 400px;
-      display: block;
-      font-size: 18px;
-      font-weight: 400; }
-  .header .header_wrapper picture img {
-    z-index: 0; }
+  .header .header_wrapper {
+    width: 95%; }
+    .header .header_wrapper .header_title {
+      color: #fff;
+      text-align: center;
+      width: 100%; }
+      .header .header_wrapper .header_title h1 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-top: 36px; }
+      .header .header_wrapper .header_title p {
+        font-size: 14px;
+        font-weight: 400; }
+      .header .header_wrapper .header_title a {
+        position: relative;
+        top: 280px;
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        box-shadow: 2px 2px 5px #000;
+        z-index: 1; }
+    .header .header_wrapper picture img {
+      z-index: 0; }
   .header .header_background picture img {
     top: 60px;
-    width: 100%; } }
+    width: 100%; }
+  .catalog .catalog_slim:before, .catalog .catalog_pro:before {
+    top: 20px;
+    right: 20px; }
+  .catalog .catalog_slim:after {
+    top: 10px;
+    right: 40px; }
+  .catalog .catalog_pro:after {
+    top: 60px;
+    right: 0px; }
+  .how {
+    width: 94%; } }
+
+@media (max-width: 500px) {
+  .navbar_popup .mfp-close {
+    left: 88%; }
+  .catalog {
+    padding: 0;
+    top: 10px; }
+    .catalog .catalog_slim, .catalog .catalog_pro {
+      padding: 20px; }
+      .catalog .catalog_slim:before, .catalog .catalog_pro:before {
+        width: 70px;
+        height: 70px;
+        top: 20px;
+        left: 20px; }
+      .catalog .catalog_slim h2, .catalog .catalog_pro h2 {
+        font-size: 24px;
+        text-align: center;
+        margin: 20px 20px 20px 70px; }
+      .catalog .catalog_slim p, .catalog .catalog_pro p {
+        font-size: 14px; }
+      .catalog .catalog_slim a, .catalog .catalog_pro a {
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+        font-size: 16px; }
+        .catalog .catalog_slim a:after, .catalog .catalog_pro a:after {
+          top: 25px;
+          left: 105px; }
+    .catalog .catalog_slim:after {
+      width: 55px;
+      height: 80px;
+      top: 15px;
+      left: 30px; }
+    .catalog .catalog_pro:after {
+      width: 100px;
+      height: 40px;
+      top: 40px;
+      left: 0px; }
+  .how {
+    top: 0; }
+    .how h2 {
+      font-size: 36px; }
+    .how .how_wrapper .how_item {
+      margin: 40px 0 20px 0;
+      width: 100%;
+      max-width: none; }
+      .how .how_wrapper .how_item span {
+        display: none; }
+      .how .how_wrapper .how_item p {
+        font-size: 14px;
+        padding: 0 20px 0 100px;
+        margin: 0; } }
+
+@media (max-width: 400px) {
+  .navbar_popup .mfp-close {
+    left: 86%; } }
+
+@media (min-width: 600px) {
+  .popup_button, .navbar_popup {
+    display: none; } }

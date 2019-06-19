@@ -18,12 +18,13 @@
 			a 
 				text-decoration: none
 				h2 
-					font-size: 20px
+					font-size: 24px
 					font-family: "Oswald"
 					font-weight: 400
 					color: #fff
-					line-height: 25px
-					padding: 10px 40px
+					line-height: 56px
+					padding: 20px 0
+					margin: 15px 25px
 					&:hover
 						box-shadow: inset 0 -4px 0 0 #fff
 		.popup_button
@@ -37,7 +38,7 @@
 					position: absolute
 					content: "\f0c9"
 					font-family: FontAwesome
-					right: -80px
+					right: 0
 					font-size: 30px
 	.header_wrapper
 		display: flex
@@ -60,6 +61,9 @@
 				font-family: "Oswald"
 				padding: 10px 20px
 				background: #68b738
+		picture
+			width: 45%
+			margin-top: 40px
 	.header_background picture img
 		position: absolute
 		right: 0
@@ -67,33 +71,250 @@
 		z-index: -1
 		width: 45vw
 
-.navbar_popup a
-	position: relative
-	display: block
-	text-align: center
-	text-decoration: none
-	border-bottom: 1px solid #ccc
-	line-height: 64px
-	color: #000
-	top: -88px
-	width: 100%
-	height: 68px
-	font-size: 20px
-	font-family: "Oswald"
-	font-weight: 600
-	background: #fff
-	&:nth-child(1)
-		border-top: 1px solid #ccc
-
+.navbar_popup 
+	.mfp-close
+		position: absolute
+		top: -42px
+		left: 90%
+		width: 40px
+		height: 40px
+		padding: 0
+		background: white
+		color: #000 !important
+		font-size: 60px
+	a
+		position: relative
+		display: block
+		text-align: center
+		text-decoration: none
+		border-bottom: 1px solid #ccc
+		line-height: 64px
+		color: #000
+		top: 9px
+		width: 100%
+		height: 68px
+		font-size: 20px
+		font-family: "Oswald"
+		font-weight: 600
+		background: #fff
+		&:nth-child(1)
+			border-top: 1px solid #ccc
+		
 .mfp-container
 	padding: 0 !important
 
-.mfp-close-btn-in .mfp-close
-	background: #fff
+.catalog
+	position: relative
+	top: 150px
+	width: 80%
+	margin: 0 auto
+	margin-top: 50px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.catalog_slim, .catalog_pro
+		position: relative
+		display: flex
+		flex-direction: column
+		width: 46%
+		background: #f2f2f2
+		padding: 40px
+		box-sizing: border-box
+		&:before
+			position: absolute
+			content: ""
+			background: #68b738
+			width: 90px
+			height: 90px
+			border-radius: 50%
+			top: 50px
+			left: 50px
+		h2 
+			text-align: center
+			font-family: "Oswald"
+			font-size: 36px
+			margin-bottom: 60px
+		p 
+			font-size: 16px
+			font-family: "Oswald"
+			color: #444
+		a 
+			position: relative
+			text-decoration: none
+			color: #000
+			font-size: 20px
+			font-family: "Oswald"
+			margin-top: auto
+			&:after
+				position: absolute
+				content: ""
+				top: 10px
+				left: 120px
+				background: url(../img/svg/right-arrow.svg) no-repeat
+				width: 30px
+				height: 12px
+	.catalog_slim:after
+		position: absolute
+		content: ""
+		background: url(../img/svg/cat-slim.svg) no-repeat
+		width: 70px
+		height: 100px
+		top: 40px
+		left: 65px
+	.catalog_pro:after
+		position: absolute
+		content: ""
+		background: url(../img/svg/cat-pro.svg) no-repeat
+		width: 135px
+		height: 55px
+		top: 65px
+		left: 20px
+
+.how
+	position: relative
+	top: 140px
+	width: 80%
+	margin: 0 auto
+	h2 
+		font-family: "Oswald"
+		font-size: 60px
+		font-weight: 400
+		margin-bottom: 0
+	.how_wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.how_item
+			position: relative
+			max-width: 220px
+			margin-top: 50px
+			span 
+				position: absolute
+				color: #f2f2f2 
+				font-family: "Oswald"
+				font-size: 250px
+				right: 0
+				top: -110px
+				z-index: -1
+			p 
+				font-family: "Oswald"
+				font-size: 16px
+				color: #444
+				padding-top: 100px
+				padding-bottom: 40px
+			&:before
+				position: absolute
+				content: ""
+				top: 0
+				left: 0
+				width: 80px
+				height: 80px
+				background: #68b738
+			&:after
+				position: absolute
+				content: ""
+				top: 20px
+				left: 15px
+				width: 40px
+				height: 40px
+			&:nth-child(1):after
+				background: url(../img/advantage-1.png) no-repeat 100%
+			&:nth-child(2):after
+				background: url(../img/advantage-2.png) no-repeat 100%
+			&:nth-child(3):after
+				background: url(../img/advantage-3.png) no-repeat 100%
+			&:nth-child(4):after
+				background: url(../img/advantage-4.png) no-repeat 100%
+
+.example
+	position: relative
+	top: 100px
+	width: 80%
+	margin: 0 auto
+	.ex_text
+		display: inline-block
+		width: 45%
+		h2 
+			font-size: 60px
+			font-family: "Oswald"
+			font-weight: 400
+		p 
+			font-size: 16px
+			font-family: "Oswald"
+		span
+			font-family: "Oswald"
+			font-size: 16px
+		.ex_day
+			margin-left: 40px
+		.ex_kilo, .ex_day
+			position: relative
+			display: inline-block
+			width: 250px
+			height: 50px
+			p 
+				font-size: 30px
+				text-align: center
+				border: 1px solid #ccc
+				padding: 20px
+			span 
+				position: absolute
+				top: 92px
+				left: 55px
+				background: #ffffff
+				padding: 10px
+	.ex_img
+		width: 45%
+		display: inline-block
+		.ex_scroll span
+			font-family: "Oswald"
+			font-size: 24px
+
+
+
+
+@media (max-width: 1300px)
+	.catalog
+		top: 0
+		.catalog_slim, .catalog_pro
+			padding: 20px
+			&:before
+				top: 25px
+			h2 
+				font-size: 30px
+				padding-left: 50px
+				margin-bottom: 20px
+		.catalog_slim:after
+			top: 15px
+		.catalog_pro:after
+			top: 45px
+
+	.how 
+		top: 0
 
 @media (max-width: 1200px)
+	.header .navbar 
+		padding: 0
+		.navbar_heads a h2
+			padding: 10px 0
+			font-size: 20px
+			margin: 0 10px
+
+	.catalog
+		.catalog_slim, .catalog_pro
+			width: 49%
+			h2 
+				padding-left: 60px
+
+@media (max-width: 1100px)
 	.header .navbar .navbar_heads a h2
-		padding: 10px 20px
+		font-size: 18px
+		margin: 0 5px
+
+	.catalog
+		.catalog_slim, .catalog_pro
+			width: 49%
+			h2 
+				padding-left: 100px
 
 @media (max-width: 1000px)
 	.header 
@@ -107,6 +328,7 @@
 				margin: 0 auto
 			picture 
 				margin: 0 auto
+				width: 100%
 				img
 					position: relative
 					width: 100%
@@ -114,12 +336,65 @@
 					top: -50px
 					z-index: -1
 
+	.catalog
+		margin-top: 0
+		.catalog_slim, .catalog_pro
+			&:before
+				left: 25px
+			h2 
+				padding-left: 120px
+		.catalog_slim:after
+			left: 35px
+		.catalog_pro:after
+			left: 0
+
 @media (max-width: 900px)
 	.header .navbar 
 		padding: 0
 		.navbar_heads
 			a h2
 				padding: 5px 10px
+
+	.catalog
+		width: 100%
+		padding: 20px
+		top: -50px
+		box-sizing: border-box
+		.catalog_slim, .catalog_pro
+			width: 100%
+			margin-top: 20px
+			padding-right: 40%
+			padding-bottom: 40px
+			&:before
+				left: auto
+				top: 50px
+				right: 50px
+				width: 160px
+				height: 160px
+			h2 
+				padding: 0
+				margin-right: auto
+			p
+				margin-bottom: 40px
+		.catalog_slim:after
+			top: 40px
+			left: auto
+			right: 70px
+			width: 120px
+			height: 180px
+			background-size: 100%
+		.catalog_pro:after
+			top: 90px
+			left: auto
+			right: 30px
+			width: 220px
+			height: 90px
+			background-size: 100%
+
+	.how
+		top: -80px
+		.how_wrapper .how_item
+			margin: 50px auto 0 auto
 
 @media (min-width: 600px) and (max-width: 1000px)
 	.header_background
@@ -132,18 +407,28 @@
 		.navbar_heads
 			a h2
 				font-size: 18px
-				padding: 3px 10px 3px 0
+				padding: 3px 25px 3px 0
+
+@media (max-width: 700px)
+	.header .navbar .navbar_heads a h2
+		padding: 3px 10px 3px 0
 
 @media (max-width: 600px)
 	.header 
 		.navbar 
 			width: 95%
 			margin-top: 0
+			.popup_button
+				width: 100%
+				h2 
+					text-align: center
 			picture
-				margin-right: 30px
+				margin-right: 0
+				width: 0
 			.navbar_heads
 				display: none
 		.header_wrapper 
+			width: 95%
 			.header_title
 				color: #fff
 				text-align: center
@@ -151,17 +436,101 @@
 				h1 
 					font-size: 36px
 					font-weight: 400
+					line-height: 36px
+					margin-top: 36px
 				p 
 					font-size: 14px
 					font-weight: 400
 				a 
 					position: relative
-					top: 400px
+					top: 280px
 					display: block
 					font-size: 18px
 					font-weight: 400
+					box-shadow: 2px 2px 5px #000
+					z-index: 1
 			picture img 
 				z-index: 0
 		.header_background picture img
 			top: 60px
 			width: 100%
+
+	.catalog
+		.catalog_slim, .catalog_pro
+			&:before
+				top: 20px
+				right: 20px
+		.catalog_slim:after
+			top: 10px
+			right: 40px
+		.catalog_pro:after
+			top: 60px
+			right: 0px
+
+	.how
+		width: 94%
+
+
+@media (max-width: 500px)
+	.navbar_popup .mfp-close
+		left: 88%
+
+	.catalog
+		padding: 0
+		top: 10px
+		.catalog_slim, .catalog_pro
+			padding: 20px
+			&:before
+				width: 70px
+				height: 70px
+				top: 20px
+				left: 20px
+			h2 
+				font-size: 24px
+				text-align: center
+				margin: 20px 20px 20px 70px
+			p 
+				font-size: 14px
+			a 
+				padding-top: 20px
+				border-top: 1px solid #ccc
+				font-size: 16px
+				&:after
+					top: 25px
+					left: 105px
+		.catalog_slim:after
+			width: 55px
+			height: 80px
+			top: 15px
+			left: 30px
+		.catalog_pro:after
+			width: 100px
+			height: 40px
+			top: 40px
+			left: 0px
+
+	.how
+		top: 0
+		h2 
+			font-size: 36px
+		.how_wrapper
+			.how_item
+				margin: 40px 0 20px 0
+				width: 100%
+				max-width: none
+				span 
+					display: none
+				p 
+					font-size: 14px
+					padding: 0 20px 0 100px
+					margin: 0
+				&:before
+				&:after
+
+@media (max-width: 400px)
+	.navbar_popup .mfp-close
+		left: 86%
+
+@media (min-width: 600px)
+	.popup_button, .navbar_popup
+		display: none
