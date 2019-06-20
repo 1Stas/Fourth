@@ -228,11 +228,15 @@
 
 .example {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   top: 100px;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
   .example .ex_text {
-    display: inline-block;
     width: 45%; }
     .example .ex_text h2 {
       font-size: 60px;
@@ -242,15 +246,28 @@
       font-size: 16px;
       font-family: "Oswald"; }
     .example .ex_text span {
+      font-size: 16px;
       font-family: "Oswald";
-      font-size: 16px; }
+      color: #444; }
+    .example .ex_text h4 {
+      font-family: "Oswald";
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 60px;
+      margin-bottom: 0; }
+      .example .ex_text h4 span {
+        font-family: "Oswald";
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 30%;
+        color: #000; }
     .example .ex_text .ex_day {
       margin-left: 40px; }
     .example .ex_text .ex_kilo, .example .ex_text .ex_day {
       position: relative;
       display: inline-block;
       width: 250px;
-      height: 50px; }
+      height: 150px; }
       .example .ex_text .ex_kilo p, .example .ex_text .ex_day p {
         font-size: 30px;
         text-align: center;
@@ -263,11 +280,54 @@
         background: #ffffff;
         padding: 10px; }
   .example .ex_img {
-    width: 45%;
-    display: inline-block; }
-    .example .ex_img .ex_scroll span {
-      font-family: "Oswald";
-      font-size: 24px; }
+    width: 45%; }
+    .example .ex_img img {
+      width: 100%; }
+    .example .ex_img .flat {
+      position: absolute; }
+    .example .ex_img .ex_scroll {
+      position: relative; }
+      .example .ex_img .ex_scroll th {
+        padding: 0 10px 0 10px; }
+        .example .ex_img .ex_scroll th a {
+          text-decoration: none;
+          font-family: "Oswald";
+          font-weight: 400;
+          font-size: 20px;
+          border-bottom: 1px solid #ccc;
+          color: #000;
+          cursor: pointer; }
+      .example .ex_img .ex_scroll td {
+        width: 100%;
+        padding: 10px; }
+        .example .ex_img .ex_scroll td span {
+          display: block;
+          width: 100%;
+          background: #dcdcdc;
+          height: 10px;
+          border: 1px solid #dcdcdc;
+          box-sizing: border-box;
+          border-radius: 5px; }
+      .example .ex_img .ex_scroll .ex_slider {
+        position: absolute;
+        top: -10px;
+        left: 40%;
+        border: 1px solid white;
+        background: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0 0 5px #333; }
+        .example .ex_img .ex_scroll .ex_slider:before {
+          position: absolute;
+          content: "";
+          border: 1px solid #68b738;
+          border-radius: 50%;
+          background: #68b738;
+          top: 20px;
+          left: 19px;
+          width: 10px;
+          height: 10px; }
 
 @media (max-width: 1300px) {
   .catalog {

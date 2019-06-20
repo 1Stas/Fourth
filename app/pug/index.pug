@@ -7,8 +7,8 @@ html
 		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
 		link(rel="stylesheet" href="../css/style.css")
 		link(rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css")
-		link(rel="stylesheet" href="../libs/owl.carousel.css")
 		link(rel="stylesheet" href="../libs/magnific.css")
+		link(rel="stylesheet" href="../libs/twentytwenty.css" type="text/css" media="screen")
 		link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald")
 		title Cat energy
 		body
@@ -81,13 +81,21 @@ html
 						.ex_day
 							p 60 ДНЕЙ
 							span затрачено времени
-						p ЗАТРАТЫ НА ПИТАНИЕ:
-						span 15 000 РУБ.
+						h4 ЗАТРАТЫ НА ПИТАНИЕ:
+							span 15 000 РУБ.
 					.ex_img
-						img(src="#", alt="котэ")
+						img.round(src="../img/before-mobile.png", alt="round-котэ")
+						img.flat(src="../img/after-mobile.png", alt="flat-котэ")
 						.ex_scroll
-							span БЫЛО
-							span СТАЛО
+							.ex_slider
+							table
+								tr
+									th
+										a(href="#") БЫЛО
+									td 
+										span
+									th
+										a(href="#") СТАЛО
 
 				.footer
 					.footer__wrapper
@@ -96,5 +104,6 @@ html
 
 script(src="../js/jquery.min.js")
 script(src="../js/magnific.js")
-script(src="../js/owl.carousel.min.js")
+script(src="../js/jquery.event.move.js" type="text/javascript")
+script(src="../js/jquery.twentytwenty.js" type="text/javascript")
 script(src="../js/common.js")
