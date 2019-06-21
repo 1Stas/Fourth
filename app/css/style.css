@@ -281,10 +281,6 @@
         padding: 10px; }
   .example .ex_img {
     width: 45%; }
-    .example .ex_img img {
-      width: 100%; }
-    .example .ex_img .flat {
-      position: absolute; }
     .example .ex_img .ex_scroll {
       position: relative; }
       .example .ex_img .ex_scroll th {
