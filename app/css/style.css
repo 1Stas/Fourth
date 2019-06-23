@@ -266,21 +266,56 @@
     .example .ex_text .ex_kilo, .example .ex_text .ex_day {
       position: relative;
       display: inline-block;
-      width: 250px;
+      width: 40%;
       height: 150px; }
       .example .ex_text .ex_kilo p, .example .ex_text .ex_day p {
         font-size: 30px;
         text-align: center;
         border: 1px solid #ccc;
         padding: 20px; }
-      .example .ex_text .ex_kilo span, .example .ex_text .ex_day span {
-        position: absolute;
-        top: 92px;
-        left: 55px;
-        background: #ffffff;
-        padding: 10px; }
+    .example .ex_text .ex_kilo span {
+      position: absolute;
+      top: 92px;
+      left: 60px;
+      background: #ffffff;
+      padding: 10px; }
+    .example .ex_text .ex_day span {
+      position: absolute;
+      top: 92px;
+      left: 52px;
+      background: #ffffff;
+      padding: 10px; }
   .example .ex_img {
-    width: 45%; }
+    width: 45%;
+    margin-top: auto; }
+    .example .ex_img .ba-slider img {
+      height: 400px;
+      margin: auto; }
+    .example .ex_img .ba-slider .resize {
+      background: #fff; }
+    .example .ex_img .ba-slider span.handle:after {
+      position: absolute;
+      content: "";
+      top: -5px;
+      border: 1px solid white;
+      background: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-left: -22px;
+      box-shadow: 0 0 5px #333;
+      z-index: 1; }
+    .example .ex_img .ba-slider span.handle:before {
+      position: absolute;
+      content: "";
+      border: 1px solid #68b738;
+      border-radius: 50%;
+      background: #68b738;
+      top: 10px;
+      left: -7px;
+      width: 10px;
+      height: 10px;
+      z-index: 2; }
     .example .ex_img .ex_scroll {
       position: relative; }
       .example .ex_img .ex_scroll th {
@@ -304,26 +339,6 @@
           border: 1px solid #dcdcdc;
           box-sizing: border-box;
           border-radius: 5px; }
-      .example .ex_img .ex_scroll .ex_slider {
-        position: absolute;
-        top: -10px;
-        left: 40%;
-        border: 1px solid white;
-        background: #fff;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        box-shadow: 0 0 5px #333; }
-        .example .ex_img .ex_scroll .ex_slider:before {
-          position: absolute;
-          content: "";
-          border: 1px solid #68b738;
-          border-radius: 50%;
-          background: #68b738;
-          top: 20px;
-          left: 19px;
-          width: 10px;
-          height: 10px; }
 
 @media (max-width: 1300px) {
   .catalog {
