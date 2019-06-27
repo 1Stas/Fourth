@@ -1,3 +1,5 @@
+body 
+	margin: 0
 
 .main 
 	width: 100%
@@ -23,8 +25,7 @@
 					font-weight: 400
 					color: #fff
 					line-height: 56px
-					padding: 20px 0
-					margin: 15px 25px
+					margin: 0px 25px
 					&:hover
 						box-shadow: inset 0 -4px 0 0 #fff
 		.popup_button
@@ -74,8 +75,8 @@
 .navbar_popup 
 	.mfp-close
 		position: absolute
-		top: -42px
-		left: 90%
+		top: -40px
+		left: 92%
 		width: 40px
 		height: 40px
 		padding: 0
@@ -99,7 +100,10 @@
 		background: #fff
 		&:nth-child(1)
 			border-top: 1px solid #ccc
-		
+
+.mfp-content
+	top: -150px
+
 .mfp-container
 	padding: 0 !important
 
@@ -245,6 +249,7 @@
 		p 
 			font-size: 16px
 			font-family: "Oswald"
+			color: #444
 		span 
 			font-size: 16px
 			font-family: "Oswald"
@@ -253,7 +258,7 @@
 			font-family: "Oswald"
 			font-size: 20px
 			font-weight: 400
-			margin-top: 60px
+			margin-top: 20px
 			margin-bottom: 0
 			span 
 				font-family: "Oswald"
@@ -276,13 +281,15 @@
 		.ex_kilo span 
 			position: absolute
 			top: 92px
-			left: 60px
+			left: 50%
+			margin-left: -60px
 			background: #ffffff
 			padding: 10px
 		.ex_day span
 			position: absolute
 			top: 92px
-			left: 52px
+			left: 50%
+			margin-left: -70px
 			background: #ffffff
 			padding: 10px
 	.ex_img 
@@ -341,7 +348,211 @@
 					border: 1px solid #dcdcdc
 					box-sizing: border-box
 					border-radius: 5px
-				
+
+.footer
+	position: relative
+	top: 100px
+	width: 100%
+	height: calc(100vh - 1000px)
+	.f_text
+		position: absolute
+		top: 120px
+		left: 100px
+		width: 500px
+		height: 150px
+		background: #fff
+		padding: 30px
+		box-sizing: border-box
+		z-index: 1
+		.h2 
+			display: inline-block
+			width: 40%
+			font-size: 20px
+			font-family: "Oswald"
+			font-weight: 400
+			text-transform: uppercase
+		.p
+			display: inline-block
+			width: 40%
+			float: right
+			font-size: 16px
+			font-family: "Oswald"
+			font-weight: 400
+	.f_map
+		width: 100%
+		height: 400px
+	.footer_wrapper
+		width: 80%
+		margin: 0 auto
+		padding: 50px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.footer_item:nth-child(2)
+			text-align: center
+		.footer_item:nth-child(3)
+			text-align: right
+		.footer_item
+			width: 30%
+			text-align: left
+			a 
+				text-decoration: none
+				color: #000
+				font-family: "Oswald"
+				font-weight: 400
+				line-height: 56px
+				cursor: pointer
+			h2 
+				font-size: 36px
+				font-weight: 800
+				color: #000
+				margin: 0
+				span 
+					font-weight: 400
+			.vk
+				display: inline-block
+				background: url(../img/svg/vk.svg) no-repeat 
+				background-size: 100% 100%
+				width: 40px
+				height: 40px
+				margin: 10px
+			.insta
+				display: inline-block
+				background: url(../img/svg/insta.svg) no-repeat
+				background-size: 100% 100%
+				width: 40px
+				height: 40px
+				margin: 10px
+			.faceb
+				display: inline-block
+				background: url(../img/svg/fb.svg) no-repeat
+				background-size: 100% 100%
+				width: 40px
+				height: 40px
+				margin: 10px
+			.htmlac
+				position: relative
+				padding-right: 60px
+				font-size: 24px
+				line-height: 56px
+				&:after
+					position: absolute
+					content: ""
+					top: 0
+					right: 0
+					background: url(../img/svg/htmlacademy.svg) no-repeat
+					background-size: 100% 100%
+					width: 50px
+					height: 50px
+
+// Page 2 Catalog.html
+
+.header
+	.navbar
+		.navbar_heads_page2
+			display: flex
+			a 
+				text-decoration: none
+				h2 
+					font-size: 24px
+					font-family: "Oswald"
+					font-weight: 400
+					color: #000
+					line-height: 56px
+					margin: 0px 25px
+					&:hover
+						box-shadow: inset 0 -4px 0 0 #68b738
+
+.shop_title
+	width: 80%
+	margin: 0 auto
+	h1 
+		font-size: 60px
+		font-family: "Oswald"
+		font-weight: 400
+
+.shop
+	width: 80%
+	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.shop_item
+		background: #f2f2f2
+		padding: 40px
+		margin: 120px 40px 20px 40px
+		text-align: center
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		max-width: 250px
+		picture
+			position: relative
+			height: 60px
+			img 
+				position: absolute
+				bottom: -10px
+				transform: translate(-50%)
+		h3 
+			font-size: 20px
+		p, a, h3
+			font-size: 16px
+			font-family: "Oswald"
+			font-weight: 400
+		p 
+			color: #444
+			text-align: left
+			border-bottom: 1px solid #444
+			span 
+				float: right
+		a 
+			text-decoration: none
+			color: #fff
+			padding: 15px
+			background: #68b738
+			margin-top: 20px
+	.shop_item_last
+		position: relative
+		border: 1px solid #f2f2f2
+		padding: 100px 40px 40px 40px
+		margin: 120px 40px 20px 40px
+		text-align: center
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		max-width: 250px
+		&:before
+			position: absolute
+			content: ""
+			border: 1px solid #f2f2f2
+			width: 40px
+			top: 50px
+			left: 40%
+		&:after
+			position: absolute
+			content: ""
+			border: 1px solid #f2f2f2
+			width: 40px
+			top: 50px
+			left: 40%
+			transform: rotate(90deg)
+		h3 
+			font-size: 20px
+		p, a, h3
+			font-size: 16px
+			font-family: "Oswald"
+			font-weight: 400
+		p 
+			color: #444
+		a 
+			text-decoration: none
+			color: #fff
+			padding: 15px
+			background: #68b738
+			margin-top: 20px
+
 
 
 
@@ -365,6 +576,14 @@
 	.how 
 		top: 0
 
+	.example 
+		top: 0
+		.ex_img .ba-slider img
+			height: 300px
+
+	.footer
+		top: 10px
+
 @media (max-width: 1200px)
 	.header .navbar 
 		padding: 0
@@ -378,6 +597,16 @@
 			width: 49%
 			h2 
 				padding-left: 60px
+
+	.example 
+		top: -80px
+		.ex_text, .ex_img
+			width: 49%
+
+	.footer
+		top: -50px
+		.f_text
+			left: 100px
 
 @media (max-width: 1100px)
 	.header .navbar .navbar_heads a h2
@@ -421,6 +650,37 @@
 			left: 35px
 		.catalog_pro:after
 			left: 0
+
+	.main_border
+		border-bottom: 1px solid #ccc
+
+	.example 
+		.ex_text 
+			width: 100%
+			.ex_kilo
+				width: 30%
+			.ex_day
+				width: 30%
+			h4 
+				margin-top: 20px
+				display: inline-block
+				width: 30%
+				text-align: right
+				span 
+					display: block
+		.ex_img
+			width: 90%
+			margin: 0 auto
+			margin-top: 50px
+			.ba-slider img
+				height: 500px
+
+	.footer
+		top: -50px
+		.f_text
+			height: 150px
+			width: 400px
+			left: 40px
 
 @media (max-width: 900px)
 	.header .navbar 
@@ -483,9 +743,59 @@
 				font-size: 18px
 				padding: 3px 25px 3px 0
 
+	.example
+		width: 100%
+		padding-left: 20px
+		padding-right: 20px
+		box-sizing: border-box
+		.ex_img
+			width: 100%
+			.ba-slider img
+				height: 500px
+
+	.footer
+		top: -100px
+		.f_text
+			position: relative
+			width: auto
+			height: auto
+			top: auto
+			left: auto
+			padding: 50px
+			.p 
+				text-align: right
+		.footer_wrapper
+			width: 100%
+			padding: 20px
+			box-sizing: border-box
+			.footer_item
+				width: 33%
+				h2 
+					font-size: 26px
+				.vk, .insta, .faceb
+					width: 25px
+					height: 25px
+					margin-top: 15px
+				.htmlac 
+					font-size: 18px
+					padding-right: 40px
+					&:after
+						width: 30px
+						height: 30px
+
 @media (max-width: 700px)
 	.header .navbar .navbar_heads a h2
 		padding: 3px 10px 3px 0
+
+	.example
+		.ex_text
+			.ex_day
+				margin-left: 0
+			h4 
+				width: 38%
+		.ex_img
+			.ba-slider img
+				height: 400px
 
 @media (max-width: 600px)
 	.header 
@@ -494,11 +804,13 @@
 			margin-top: 0
 			.popup_button
 				width: 100%
+				padding-top: 8px
 				h2 
 					text-align: center
 			picture
 				margin-right: 0
 				width: 0
+				padding-top: 8px
 			.navbar_heads
 				display: none
 		.header_wrapper 
@@ -543,6 +855,54 @@
 
 	.how
 		width: 94%
+
+	.main_border
+		position: relative
+		top: -100px
+
+	.example
+		top: -170px
+		.ex_text
+			h2 
+				font-size: 36px
+			p 
+				font-size: 14px
+			span 
+				font-size: 14px
+			h4
+				width: 100%
+				font-size: 14px
+				text-align: center
+				span
+					display: inline
+					margin-left: 10px
+					font-size: 14px
+			.ex_kilo, .ex_day
+				p 
+					font-size: 24px
+					padding: 10px
+			.ex_kilo 
+				height: 90px
+				span 
+					font-size: 12px
+					padding: 5px
+					top: 66px
+					margin-left: -37px
+			.ex_day 
+				height: 90px
+				float: right
+				span
+					font-size: 12px
+					padding: 5px
+					top: 66px
+					margin-left: -50px
+		.ex_img
+			.ba-slider
+				img 
+					height: 350px
+
+	.footer
+		top: -210px
 
 
 @media (max-width: 500px)
@@ -601,9 +961,74 @@
 				&:before
 				&:after
 
+	.main_border
+		top: 60px
+
+	.example
+		top: 0px
+		background: #f2f2f2
+		padding: 0 0 40px 0
+		.ex_img
+			.ba-slider 
+				img
+					height: 250px
+				.resize 
+					background: #f2f2f2
+				span.handle 
+					&:after
+						border: 1px solid transparent
+						box-shadow: 0 0 5px transparent
+						background: transparent
+					&:before
+						top: 11px
+			.ex_scroll 
+				td 
+					padding: 0
+					span 
+						height: 18px
+						background: #ffffff
+						border: 1px solid #ccc
+						border-radius: 10px
+				th 
+					a 
+						border-bottom: 0px
+		.ex_text
+			padding: 0 10px 0 10px
+			.ex_kilo, .ex_day
+				width: 45%
+			.ex_kilo span, .ex_day span
+				background: #f2f2f2
+
+	.main_border
+		border: 0
+
+	.footer
+		top: -50px
+		.f_text
+			padding: 20px
+			.h2, .p 
+				width: 49%
+		.footer_wrapper
+			flex-direction: column
+			padding: 0
+			background: #f2f2f2
+			.footer_item
+				width: 100%
+				text-align: center
+			.footer_item:nth-child(2)
+				border-top: 1px solid #ccc
+				border-bottom: 1px solid #ccc
+			.footer_item:nth-child(3)
+				text-align: center
+
 @media (max-width: 400px)
 	.navbar_popup .mfp-close
 		left: 86%
+
+	.example .ex_img .ba-slider img
+		height: 200px
+
+
 
 @media (min-width: 600px)
 	.popup_button, .navbar_popup

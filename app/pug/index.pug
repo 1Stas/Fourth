@@ -22,9 +22,9 @@ html
 						.navbar_heads
 							a(href="index.html")
 								h2 ГЛАВНАЯ
-							a(href="#")
+							a(href="catalog.html")
 								h2 КАТАЛОГ ПРОДУКЦИИ
-							a(href="#")
+							a(href="program.html")
 								h2 ПОДБОР ПРОГРАММЫ
 						a.popup_button(href="#popup_menu")
 							h2 CAT 
@@ -32,8 +32,8 @@ html
 									.mfp-close.mfp-hide
 						.navbar_popup(id="popup_menu" class="mfp-hide")
 							a(href="index.html") ГЛАВНАЯ
-							a(href="#") КАТАЛОГ ПРОДУКЦИИ
-							a(href="#") ПОДБОР ПРОГРАММЫ
+							a(href="catalog.html") КАТАЛОГ ПРОДУКЦИИ
+							a(href="program.html") ПОДБОР ПРОГРАММЫ
 					.header_wrapper
 						.header_title
 							h1 Функциональное питание для котов
@@ -71,6 +71,7 @@ html
 						.how_item
 							span 4
 							p Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+				.main_border
 				.example
 					.ex_text
 						h2 Живой пример
@@ -98,11 +99,24 @@ html
 										span
 									th
 										a(href="#") СТАЛО
-					.bacground_example
 				.footer
-					.footer__wrapper
-						.footer__item
-
+					.f_text
+						.h2 Приглашаем к сотрудничеству диллеров!
+						.p ул. Большая Коньшенная, д. 19/8 
+							p Санкт-Петербург
+					.f_map#map
+						<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+					.footer_wrapper
+						.footer_item
+							a(href="#")
+								h2 CAT 
+									span ENERGY
+						.footer_item
+							a.vk(href="#")
+							a.insta(href="#")
+							a.faceb(href="#")
+						.footer_item
+							a.htmlac(href="#") HTML Academy
 
 script(src="../js/jquery.min.js")
 script(src="../js/magnific.js")

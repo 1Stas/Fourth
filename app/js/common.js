@@ -118,7 +118,7 @@ function drags(dragElement, resizeElement, container) {
  
     // Set limits
     minLeft = containerOffset + 30;
-    maxLeft = containerOffset + containerWidth - dragWidth - 40;
+    maxLeft = containerOffset + containerWidth - dragWidth - 30;
     
     // Calculate the dragging distance on mousemove.
     dragElement.parents().on("mousemove touchmove", function(e) {
@@ -155,5 +155,64 @@ function drags(dragElement, resizeElement, container) {
     resizeElement.removeClass('resizable');
   });
 }
+
+// Ставим свою иконку на яндекс картах
+//https://tech.yandex.ru/maps/jsbox/2.1/?from=techmapsmain
+
+
+ymaps.ready(function () {
+	var myMap = new ymaps.Map('map', {
+					center: [59.938796, 30.322048],
+					zoom: 17
+			}, {
+					searchControlProvider: 'yandex#search'
+			}),
+
+			// Создаём макет содержимого.
+			MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+			),
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+					hintContent: 'Собственный значок метки',
+					balloonContent: 'Это красивая метка'
+			}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: '',
+					// Размеры метки.
+					iconImageSize: [30, 42],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-5, -38]
+			}),
+
+			myPlacemarkWithContent = new ymaps.Placemark([59.938631, 30.323055], {
+					hintContent: 'CAT ENERGY',
+					balloonContent: 'А эта — новогодняя',
+					iconContent: ''
+			}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#imageWithContent',
+					// Своё изображение иконки метки.
+					iconImageHref: '../img/map-pin.png',
+					// Размеры метки.
+					iconImageSize: [100, 100],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-30, -90],
+					// Смещение слоя с содержимым относительно слоя с картинкой.
+					iconContentOffset: [15, 15],
+					// Макет содержимого.
+					iconContentLayout: MyIconContentLayout
+			});
+
+	myMap.geoObjects
+			.add(myPlacemark)
+			.add(myPlacemarkWithContent);
+});
 
 
