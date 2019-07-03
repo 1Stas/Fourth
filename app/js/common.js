@@ -76,6 +76,7 @@ $(document).ready(function(){
 
 // Before-after.js слайдер
 // https://github.com/jotform/before-after.js/
+// Фиксированная высота и при прозрачных картинках выставление бекграунда
 
 // Call & init
 $(document).ready(function(){

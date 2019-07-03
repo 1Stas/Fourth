@@ -2,7 +2,8 @@ body {
   margin: 0; }
 
 .main {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .header .navbar {
   display: flex;
@@ -39,7 +40,7 @@ body {
         position: absolute;
         content: "\f0c9";
         font-family: FontAwesome;
-        right: 0;
+        right: 10px;
         font-size: 30px; }
 
 .header .header_wrapper {
@@ -76,8 +77,8 @@ body {
 
 .navbar_popup .mfp-close {
   position: absolute;
-  top: -40px;
-  left: 92%;
+  top: -35px;
+  left: 90%;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -353,7 +354,7 @@ body {
   position: relative;
   top: 100px;
   width: 100%;
-  height: calc(100vh - 1000px); }
+  height: 80vh; }
   .footer .f_text {
     position: absolute;
     top: 120px;
@@ -552,7 +553,7 @@ body {
       background: #68b738;
       margin-top: 20px; }
 
-.add h2 {
+.add .before-after {
   position: relative;
   font-size: 36px;
   font-family: "Oswald";
@@ -561,14 +562,14 @@ body {
   overflow: hidden;
   padding-left: 10%;
   box-sizing: border-box; }
-  .add h2:before {
+  .add .before-after:before {
     position: absolute;
     content: "";
     border: 2px solid #68b738;
     width: 100%;
     bottom: 36%;
     margin-left: -102%; }
-  .add h2:after {
+  .add .before-after:after {
     position: absolute;
     content: "";
     border: 2px solid #68b738;
@@ -637,6 +638,215 @@ body {
       background: url(../img/svg/gift.svg) no-repeat;
       width: 60px;
       height: 60px; }
+
+.spring {
+  position: relative;
+  height: 40px; }
+
+h1, h2, h3, p, span {
+  font-family: "Oswald";
+  font-weight: 400; }
+
+.form_title, .name_w, .contacts, .comment, .checking {
+  width: 80%;
+  margin: 0 auto; }
+
+.form_title h1 {
+  font-size: 60px; }
+
+.form_title p {
+  font-size: 20px;
+  width: 30%;
+  margin-bottom: 60px; }
+
+.name_w {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px; }
+  .name_w .weight {
+    width: 48%;
+    box-sizing: border-box; }
+    .name_w .weight label {
+      display: block;
+      width: 100%; }
+      .name_w .weight label span {
+        font-size: 20px; }
+      .name_w .weight label input {
+        padding: 15px 10px 10px 10px;
+        border: 1px solid #f2f2f2;
+        height: 20px;
+        font-size: 24px; }
+        .name_w .weight label input::placeholder {
+          font-size: 20px; }
+        .name_w .weight label input:focus::-webkit-input-placeholder {
+          color: transparent; }
+    .name_w .weight label:nth-child(1) input {
+      width: calc(100% - 93px);
+      margin-bottom: 30px; }
+    .name_w .weight label:nth-child(2) input {
+      width: calc(100% - 121px);
+      margin-bottom: 30px; }
+    .name_w .weight label:nth-child(3) input {
+      width: calc(100% - 163px); }
+  .name_w .radio {
+    width: 48%;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    padding: 0 0 0 60px; }
+    .name_w .radio label {
+      display: block;
+      margin: 25px 0; }
+      .name_w .radio label input[type="radio"] {
+        opacity: 0; }
+      .name_w .radio label input[type="radio"]:checked + span:after {
+        opacity: 1; }
+      .name_w .radio label span {
+        position: relative;
+        font-size: 20px; }
+        .name_w .radio label span:before {
+          position: absolute;
+          content: "";
+          border: 1px solid #E8E1DC;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          top: -5px;
+          left: -60px;
+          background: #fff; }
+        .name_w .radio label span:after {
+          position: absolute;
+          content: "";
+          border: 1px solid #E8E1DC;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          top: 5px;
+          left: -50px;
+          background: #68b738;
+          opacity: 0; }
+
+.b-a {
+  position: relative; }
+  .b-a:before {
+    position: absolute;
+    content: "";
+    border: 2px solid #68b738;
+    bottom: 40%;
+    width: 40%;
+    margin-left: -42%; }
+  .b-a:after {
+    position: absolute;
+    content: "";
+    border: 2px solid #68b738;
+    bottom: 40%;
+    width: 100%;
+    margin-left: 2%; }
+
+.contacts h2 {
+  font-size: 36px; }
+
+.contacts label {
+  width: 46%; }
+  .contacts label span {
+    position: relative;
+    font-size: 20px; }
+  .contacts label input {
+    padding: 15px 10px 10px 10px;
+    border: 1px solid #f2f2f2;
+    height: 20px;
+    font-size: 24px; }
+    .contacts label input::placeholder {
+      font-size: 20px; }
+    .contacts label input:focus::-webkit-input-placeholder {
+      color: transparent; }
+
+.contacts label:nth-child(2) input {
+  width: calc(50% - 135px); }
+
+.contacts label:nth-child(2) .cont-icon:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: 20px;
+  background: url(../img/svg/mail.svg) no-repeat;
+  background-size: 100%; }
+
+.contacts label:nth-child(3) {
+  float: right; }
+  .contacts label:nth-child(3) input {
+    width: calc(100% - 110px); }
+
+.contacts label:nth-child(3) .cont-icon:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: 20px;
+  background: url(../img/svg/phone.svg) no-repeat;
+  background-size: 100%; }
+
+.comment h2 {
+  font-size: 36px; }
+
+.comment textarea {
+  width: 100%;
+  height: 160px;
+  font-size: 20px;
+  border: 1px solid #f2f2f2; }
+
+.checking h2 {
+  font-size: 36px;
+  margin-bottom: 0; }
+
+.checking .check_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .checking .check_wrap label {
+    margin-top: 40px; }
+    .checking .check_wrap label span {
+      margin-left: 60px;
+      font-size: 20px; }
+    .checking .check_wrap label input[type="checkbox"] {
+      opacity: 0; }
+    .checking .check_wrap label input[type="checkbox"]:checked + span:after {
+      opacity: 1; }
+    .checking .check_wrap label span {
+      position: relative; }
+      .checking .check_wrap label span:before {
+        position: absolute;
+        content: "";
+        border: 1px solid #f2f2f2;
+        width: 40px;
+        height: 40px;
+        top: -5px;
+        left: -60px; }
+      .checking .check_wrap label span:after {
+        position: absolute;
+        content: "\f00c";
+        font-family: FontAwesome;
+        top: 5px;
+        left: -50px;
+        color: #68b738;
+        opacity: 0; }
+
+.checking p {
+  margin-top: 40px; }
+  .checking p input {
+    background: #68b738;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    width: 50%; }
+  .checking p span {
+    font-size: 18px;
+    color: #444;
+    margin-left: 50px; }
 
 @media (max-width: 1300px) {
   .catalog {
@@ -1059,6 +1269,10 @@ body {
   .popup_button, .navbar_popup {
     display: none; } }
 
+@media (max-width: 1200px) {
+  .spring {
+    height: 90px; } }
+
 @media (max-width: 1100px) {
   .add .add_wrapper .add_text {
     width: 65%; }
@@ -1093,7 +1307,7 @@ body {
     margin: 120px 0px 20px 0px; }
   .shop .shop_item_last {
     margin: 120px 0px 20px 0px; }
-  .add h2 {
+  .add .before-after {
     padding-left: 6%; }
   .add .add_wrapper {
     width: 100%; }
@@ -1136,7 +1350,9 @@ body {
     .shop .shop_item {
       margin: 120px 20px 20px 20px; }
     .shop .shop_item_last {
-      margin: 120px 20px 20px 20px; } }
+      margin: 120px 20px 20px 20px; }
+  .spring {
+    height: 210px; } }
 
 @media (max-width: 500px) {
   .shop {
@@ -1186,9 +1402,9 @@ body {
         left: 45%; }
       .shop .shop_item_last:after {
         left: 45%; }
-  .add h2 {
+  .add .before-after {
     font-size: 24px; }
-    .add h2:before {
+    .add .before-after:before {
       margin-left: -150%; }
   .add .add_wrapper .add_text {
     width: 90%;
@@ -1217,7 +1433,9 @@ body {
       padding: 0 0 0 33%; }
     .add .add_wrapper .add_img:before {
       top: 100px;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+  .spring {
+    height: 30px; } }
 
 @media (max-width: 400px) {
   .add .add_wrapper .add_img span {
@@ -1225,3 +1443,117 @@ body {
     bottom: 60px; }
   .add .add_wrapper .add_img:before {
     top: 60px; } }
+
+@media (max-width: 1000px) {
+  .contacts {
+    margin-bottom: 100px; }
+    .contacts label {
+      width: 100%; }
+    .contacts label:nth-child(2) input {
+      width: calc(100% - 89px); }
+    .contacts label:nth-child(3) input {
+      width: calc(100% - 110px);
+      margin-top: 20px; } }
+
+@media (max-width: 800px) {
+  .form_title p {
+    width: 60%; }
+  .name_w .weight, .name_w .radio {
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  .form_title, .name_w, .contacts, .comment, .checking {
+    width: 100%; }
+  .form_title h1 {
+    font-size: 36px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .form_title p {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; }
+  .name_w .weight label {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; }
+    .name_w .weight label span {
+      font-size: 16px; }
+    .name_w .weight label input {
+      font-size: 16px; }
+      .name_w .weight label input::placeholder {
+        font-size: 16px; }
+  .name_w .weight label:nth-child(1) input {
+    width: calc(100% - 64px); }
+  .name_w .weight label:nth-child(2) input {
+    width: calc(100% - 86px); }
+  .name_w .weight label:nth-child(3) input {
+    width: calc(100% - 120px); }
+  .name_w .radio {
+    margin-top: 40px; }
+    .name_w .radio label span {
+      font-size: 16px; }
+      .name_w .radio label span:before {
+        top: -8px; }
+      .name_w .radio label span:after {
+        top: 2px; }
+  .contacts {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; }
+    .contacts h2 {
+      font-size: 24px; }
+    .contacts label span {
+      font-size: 16px; }
+    .contacts label input {
+      font-size: 16px; }
+      .contacts label input::placeholder {
+        font-size: 16px; }
+  .b-a:before {
+    border: 0; }
+  .comment h2 {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .comment textarea {
+    width: 94%;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .comment textarea::placeholder {
+      font-size: 16px; }
+  .checking h2 {
+    font-size: 24px;
+    padding-left: 20px; }
+  .checking .check_wrap {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .checking .check_wrap label {
+      width: 45%; }
+      .checking .check_wrap label span {
+        margin-left: 40px;
+        font-size: 16px; }
+  .checking p input {
+    margin-left: 20px;
+    font-size: 16px; }
+  .checking p span {
+    font-size: 14px; } }
+
+@media (max-width: 500px) {
+  .checking .check_wrap label {
+    width: 100%; }
+  .checking p input {
+    width: 94%;
+    margin: 0 auto;
+    display: block; }
+  .checking p span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center; } }
+
+@media (max-width: 330px) {
+  .contacts .b-a:after {
+    bottom: 69%;
+    margin-left: 15%; } }

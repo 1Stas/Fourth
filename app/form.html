@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../libs/magnific.css">
+  <link rel="stylesheet" href="../libs/ba-slider.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald">
+  <title>Cat energy</title>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="navbar">
+          <picture>
+            <source media="(max-width: 600px)" srcset="../img/svg/logo-mobile.svg">
+            <source media="(max-width: 800px)" srcset="../img/svg/logo-tablet.svg"><img src="../img/svg/logo-desktop.svg" alt="Logo">
+          </picture>
+          <div class="navbar_heads_page2"><a href="index.html">
+              <h2>ГЛАВНАЯ</h2></a><a href="catalog.html">
+              <h2>КАТАЛОГ ПРОДУКЦИИ</h2></a><a href="form.html">
+              <h2>ПОДБОР ПРОГРАММЫ</h2></a></div><a class="popup_button" href="#popup_menu">
+            <h2>CAT <span>ENERGY
+                <div class="mfp-close mfp-hide"></div></span></h2></a>
+          <div class="navbar_popup mfp-hide" id="popup_menu"><a href="index.html">ГЛАВНАЯ</a><a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a><a href="form.html">ПОДБОР ПРОГРАММЫ</a></div>
+        </div>
+      </div>
+      <div class="form_title">
+        <h1>Подбор программы</h1>
+        <p>ЗАПОЛНИТЕ АНКЕТУ И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</p>
+      </div>
+      <form action="form.html">
+        <div class="name_w">
+          <div class="weight">
+            <label><span>ИМЯ:*</span>
+              <input type="text" name="name" placeholder="БАРСИК">
+            </label>
+            <label><span>ВЕС (КГ):*</span>
+              <input type="text" name="weight" placeholder="7">
+            </label>
+            <label><span>ВОЗРАСТ (ЛЕТ):</span>
+              <input type="text" name="age" placeholder="7">
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="radio" checked><span>ПОХУДЕНИЕ</span>
+            </label>
+            <label>
+              <input type="radio" name="radio"><span>НАБОР МАССЫ</span>
+            </label>
+            <label>
+              <input type="radio" name="radio"><span>НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+            </label>
+          </div>
+        </div>
+        <div class="contacts">
+          <h2 class="b-a">Контактные данные (владельца кота)</h2>
+          <label><span>E-MAIL:*</span>
+            <input type="email" name="email" placeholder="EMAIL@GMAIL.COM"><span class="cont-icon"></span>
+          </label>
+          <label><span>ТЕЛЕФОН:*</span>
+            <input type="phone" name="phone" placeholder="8(960) 900-60-90"><span class="cont-icon"></span>
+          </label>
+        </div>
+        <div class="comment">
+          <h2 class="b-a">Комментарий</h2>
+          <textarea name="field" cols="30" rows="1" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+        </div>
+        <div class="checking">
+          <h2 class="b-a">Дополнительно</h2>
+          <div class="check_wrap">
+            <label>
+              <input type="checkbox" checked><span>САХАРОЗАМЕНИТЕЛЬ</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>ПИТЬЕВАЯ ВОДА</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>МОЛОКО</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>ВИТАМИНЫ</span>
+            </label>
+          </div>
+          <p>
+            <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ"><span>*-Обязательные поля</span>
+          </p>
+        </div>
+      </form>
+      <div class="footer">
+        <div class="f_text">
+          <div class="h2">Приглашаем к сотрудничеству диллеров!</div>
+          <div class="p">ул. Большая Коньшенная, д. 19/8 
+            <p>Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="f_map" id="map"><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script></div>
+        <div class="footer_wrapper">
+          <div class="footer_item"><a href="#">
+              <h2>CAT <span>ENERGY</span></h2></a></div>
+          <div class="footer_item"><a class="vk" href="#"></a><a class="insta" href="#"></a><a class="faceb" href="#"></a></div>
+          <div class="footer_item"><a class="htmlac" href="#">HTML Academy</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/magnific.js"></script>
+<script src="../js/common.js"></script>
